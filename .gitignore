@@ -1,6 +1,5 @@
 # Prerequisites
 deploy.sh
-.git.*
 *.d
 
 # Compiled Object files
