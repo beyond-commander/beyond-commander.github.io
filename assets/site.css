@@ -2599,6 +2599,7 @@ backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)
   .hero-shot{
     background-size:auto 80% !important;
     background-position:center top !important;
+    margin-left: 60px;
   }
   .hero-shot-overlay{
     left:15%;
