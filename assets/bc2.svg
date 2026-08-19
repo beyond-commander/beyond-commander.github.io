@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg50"
+   sodipodi:docname="bc.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview50"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.2558594"
+     inkscape:cx="263.75757"
+     inkscape:cy="275.50476"
+     inkscape:window-width="5120"
+     inkscape:window-height="1359"
+     inkscape:window-x="1174"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg50" />
+  <defs
+     id="defs17">
+    <!-- Kék kártyatest -->
+    <linearGradient
+       id="bodyBlue"
+       x1="70"
+       y1="40"
+       x2="440"
+       y2="470"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1766265,0,0,1.1243398,-38.802186,-26.689333)">
+      <stop
+         offset="0"
+         stop-color="#3b98ff"
+         id="stop1"
+         style="stop-color:#001330;stop-opacity:1;" />
+      <stop
+         offset="0.30"
+         stop-color="#176bdc"
+         id="stop2" />
+      <stop
+         offset="0.65"
+         stop-color="#0b489f"
+         id="stop3" />
+      <stop
+         offset="1"
+         stop-color="#05265c"
+         id="stop4" />
+    </linearGradient>
+    <!-- Belső kék perem -->
+    <linearGradient
+       id="edgeBlue"
+       x1="80"
+       y1="50"
+       x2="430"
+       y2="460"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1766265,0,0,1.1243398,-38.802186,-26.689333)">
+      <stop
+         offset="0"
+         stop-color="#79c3ff"
+         id="stop5" />
+      <stop
+         offset="0.45"
+         stop-color="#2b82ed"
+         id="stop6" />
+      <stop
+         offset="1"
+         stop-color="#0a3a83"
+         id="stop7" />
+    </linearGradient>
+    <!-- Arany -->
+    <linearGradient
+       id="gold"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#fff2a6"
+         id="stop8" />
+      <stop
+         offset="0.18"
+         stop-color="#ffd85a"
+         id="stop9" />
+      <stop
+         offset="0.58"
+         stop-color="#eaaa18"
+         id="stop10" />
+      <stop
+         offset="1"
+         stop-color="#a96500"
+         id="stop11" />
+    </linearGradient>
+    <!-- Kijelző -->
+    <linearGradient
+       id="screen"
+       x1="94.369601"
+       y1="203.70967"
+       x2="94.369601"
+       y2="462.35228"
+       gradientTransform="matrix(1.3465741,0,0,0.98243983,-38.802186,-26.689333)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#ffffff"
+         id="stop12" />
+      <stop
+         offset="1"
+         stop-color="#c8d9eb"
+         id="stop13" />
+    </linearGradient>
+    <!-- Bal panel -->
+    <linearGradient
+       id="leftBlue"
+       x1="116.08234"
+       y1="237.86564"
+       x2="243.0784"
+       y2="364.8617"
+       gradientTransform="matrix(1.1859281,0,0,1.3431481,-38.802186,-80.833917)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#4cc4ff"
+         id="stop14"
+         style="stop-color:#e60000;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#0872e8"
+         id="stop15" />
+    </linearGradient>
+    <!-- Jobb panel -->
+    <linearGradient
+       id="rightBlue"
+       x1="264.90585"
+       y1="237.86564"
+       x2="391.90191"
+       y2="364.8617"
+       gradientTransform="matrix(1.1859281,0,0,1.3509973,-38.802186,-82.700971)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#378fff"
+         id="stop16" />
+      <stop
+         offset="1"
+         stop-color="#174db5"
+         id="stop17" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient50"
+       x1="149.12899"
+       y1="44.230167"
+       x2="149.12899"
+       y2="94.964771"
+       gradientTransform="matrix(0.65044364,0,0,1.5374122,-4.4329004,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient51"
+       x1="212.16289"
+       y1="44.230167"
+       x2="212.16289"
+       y2="94.964771"
+       gradientTransform="matrix(0.65044364,0,0,1.5374122,-4.4329004,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient52"
+       x1="275.19679"
+       y1="44.230167"
+       x2="275.19679"
+       y2="94.964771"
+       gradientTransform="matrix(0.65044364,0,0,1.5374122,-4.4329004,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient53"
+       x1="338.23069"
+       y1="44.230167"
+       x2="338.23069"
+       y2="94.964771"
+       gradientTransform="matrix(0.65044364,0,0,1.5374122,-4.4329004,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient54"
+       x1="401.26459"
+       y1="44.230167"
+       x2="401.26459"
+       y2="94.964771"
+       gradientTransform="matrix(0.65044364,0,0,1.5374122,-4.4329004,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient55"
+       x1="464.29849"
+       y1="44.230167"
+       x2="464.29849"
+       y2="94.964771"
+       gradientTransform="matrix(0.65044364,0,0,1.5374122,-4.4329004,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient56"
+       x1="527.33239"
+       y1="44.230167"
+       x2="527.33239"
+       y2="94.964771"
+       gradientTransform="matrix(0.65044364,0,0,1.5374122,-4.4329004,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#gold"
+       id="linearGradient57"
+       x1="602.80487"
+       y1="49.050698"
+       x2="602.80487"
+       y2="93.00522"
+       gradientTransform="matrix(0.64156066,0,0,1.2833296,-7.2685685,26.553774)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- ====================================================== -->
+  <!-- MMC / SD KÁRTYATEST                                     -->
+  <!-- ====================================================== -->
+  <!--
+       Egyszerű, teljesen zárt path.
+       Inkscape kompatibilis.
+  -->
+  <path
+     d="M 62.387691,16.035579 H 401.2561 l 82.36386,78.70378 V 456.77678 q 0,42.7249 -44.71181,42.7249 H 81.213715 q -42.358553,0 -42.358553,-40.47623 V 54.263131 q 0,-38.227552 23.532529,-38.227552 z"
+     fill="url(#bodyBlue)"
+     stroke="#031a42"
+     stroke-width="11.5019"
+     stroke-linejoin="round"
+     id="path17"
+     style="fill:url(#bodyBlue);stroke:#8dd3ff;stroke-opacity:1" />
+  <!-- Belső fényes kontúr -->
+  <path
+     d="M 65.917571,31.776336 H 394.19635 l 71.77422,68.584724 v 350.79402 q 0,29.23283 -31.76893,29.23283 H 85.920221 q -28.239035,0 -28.239035,-26.98416 V 57.63615 q 0,-25.859814 8.236385,-25.859814 z"
+     fill="none"
+     stroke="url(#edgeBlue)"
+     stroke-width="5.75093"
+     stroke-linejoin="round"
+     opacity="0.85"
+     id="path18"
+     style="stroke:url(#edgeBlue)" />
+  <!-- ====================================================== -->
+  <!-- ARANY MMC ÉRINTKEZŐK                                   -->
+  <!-- ====================================================== -->
+  <!-- Kontaktusok csillanása -->
+  <g
+     id="g58"
+     transform="matrix(1.1766265,0,0,1.1243398,-38.802184,-26.689332)">
+    <rect
+       x="93.567101"
+       y="69"
+       width="31"
+       height="76"
+       rx="5"
+       id="rect18"
+       style="fill:url(#linearGradient50);stroke:#865300;stroke-width:2" />
+    <rect
+       x="134.56709"
+       y="69"
+       width="31"
+       height="76"
+       rx="5"
+       id="rect19"
+       style="fill:url(#linearGradient51);stroke:#865300;stroke-width:2" />
+    <rect
+       x="175.56709"
+       y="69"
+       width="31"
+       height="76"
+       rx="5"
+       id="rect20"
+       style="fill:url(#linearGradient52);stroke:#865300;stroke-width:2" />
+    <rect
+       x="216.56709"
+       y="69"
+       width="31"
+       height="76"
+       rx="5"
+       id="rect21"
+       style="fill:url(#linearGradient53);stroke:#865300;stroke-width:2" />
+    <rect
+       x="257.56711"
+       y="69"
+       width="31"
+       height="76"
+       rx="5"
+       id="rect22"
+       style="fill:url(#linearGradient54);stroke:#865300;stroke-width:2" />
+    <rect
+       x="298.56711"
+       y="69"
+       width="31"
+       height="76"
+       rx="5"
+       id="rect23"
+       style="fill:url(#linearGradient55);stroke:#865300;stroke-width:2" />
+    <rect
+       x="339.56711"
+       y="69"
+       width="31"
+       height="76"
+       rx="5"
+       id="rect24"
+       style="fill:url(#linearGradient56);stroke:#865300;stroke-width:2" />
+    <rect
+       x="380.47446"
+       y="90.319504"
+       width="26.185246"
+       height="54.773121"
+       rx="5.035624"
+       id="rect25"
+       style="fill:url(#linearGradient57);stroke:#865300;stroke-width:1.81475" />
+    <rect
+       x="101.22684"
+       y="72.670128"
+       width="21"
+       height="6"
+       rx="3"
+       id="rect26"
+       style="opacity:0.75;fill:#fff2a8" />
+    <rect
+       x="142.22684"
+       y="72.670128"
+       width="21"
+       height="6"
+       rx="3"
+       id="rect27"
+       style="opacity:0.75;fill:#fff2a8" />
+    <rect
+       x="183.22684"
+       y="72.670128"
+       width="21"
+       height="6"
+       rx="3"
+       id="rect28"
+       style="opacity:0.75;fill:#fff2a8" />
+    <rect
+       x="224.22684"
+       y="72.670128"
+       width="21"
+       height="6"
+       rx="3"
+       id="rect29"
+       style="opacity:0.75;fill:#fff2a8" />
+    <rect
+       x="265.22684"
+       y="72.670128"
+       width="21"
+       height="6"
+       rx="3"
+       id="rect30"
+       style="opacity:0.75;fill:#fff2a8" />
+    <rect
+       x="306.22684"
+       y="72.670128"
+       width="21"
+       height="6"
+       rx="3"
+       id="rect31"
+       style="opacity:0.75;fill:#fff2a8" />
+    <rect
+       x="347.22684"
+       y="72.670128"
+       width="21"
+       height="6"
+       rx="3"
+       id="rect32"
+       style="opacity:0.75;fill:#fff2a8" />
+    <rect
+       x="387.34027"
+       y="94.968826"
+       width="16"
+       height="6"
+       rx="3"
+       id="rect33"
+       style="opacity:0.75;fill:#fff2a8" />
+  </g>
+  <!-- ====================================================== -->
+  <!-- NAGY COMMANDER ABLAK                                   -->
+  <!-- ====================================================== -->
+  <rect
+     x="74.182014"
+     y="159.97786"
+     width="376.46439"
+     height="286.51382"
+     rx="27.058374"
+     fill="#031b43"
+     stroke="#63b5ff"
+     stroke-width="5.80577"
+     id="rect34" />
+  <rect
+     x="88.273476"
+     y="173.44315"
+     width="348.28143"
+     height="254.1008"
+     rx="16.472771"
+     fill="url(#screen)"
+     id="rect35"
+     style="fill:url(#screen);stroke-width:1.15019" />
+  <!-- ====================================================== -->
+  <!-- FELSŐ NAVIGÁCIÓ                                        -->
+  <!-- ====================================================== -->
+  <path
+     d="m 104.74624,173.44315 h 315.33589 q 16.47277,0 16.47277,15.74076 v 35.97887 H 88.273474 v -35.97887 q 0,-15.74076 16.472766,-15.74076 z"
+     fill="#062c65"
+     id="path35"
+     style="stroke-width:1.15019" />
+  <!-- Bal fejléc -->
+  <rect
+     x="98.863098"
+     y="184.68655"
+     width="150.6082"
+     height="30.357174"
+     rx="7.0597587"
+     fill="#0e6edb"
+     id="rect36"
+     style="fill:#db0e43;fill-opacity:1;stroke-width:1.15019" />
+  <!-- Jobb fejléc -->
+  <rect
+     x="275.35709"
+     y="184.68655"
+     width="150.6082"
+     height="30.357174"
+     rx="7.0597587"
+     fill="#1551b7"
+     id="rect37"
+     style="stroke-width:1.15019" />
+  <!-- Bal mappa -->
+  <path
+     d="m 109.45274,194.80561 h 20.00265 l 7.05976,6.74603 h 20.00266 v 11.2434 h -47.06507 z"
+     fill="#d8f3ff"
+     id="path37"
+     style="stroke-width:1.15019" />
+  <!-- Jobb mappa -->
+  <path
+     d="m 285.94672,194.80561 h 20.00264 l 7.05976,6.74603 h 20.00265 v 11.2434 h -47.06505 z"
+     fill="#d8f3ff"
+     id="path38"
+     style="stroke-width:1.15019" />
+  <!-- ====================================================== -->
+  <!-- BAL PANEL                                              -->
+  <!-- ====================================================== -->
+  <rect
+     x="98.863098"
+     y="238.65486"
+     width="150.6082"
+     height="170.57449"
+     rx="10.589639"
+     fill="url(#leftBlue)"
+     id="rect38"
+     style="fill:url(#leftBlue);stroke-width:1.26208" />
+  <!-- Nagy mappa -->
+  <path
+     d="m 114.15925,254.39561 h 31.76891 l 9.41302,8.99472 H 209.466 q 5.88312,0 5.88312,6.74604 v 24.73548 H 114.15925 Z"
+     fill="#e0f6ff"
+     id="path39"
+     style="stroke-width:1.15019" />
+  <!-- Fájllista -->
+  <g
+     fill="#ffffff"
+     id="g42"
+     transform="matrix(1.1766265,0,0,1.1243398,-38.802184,-26.689332)">
+    <rect
+       x="130"
+       y="299"
+       width="83"
+       height="8"
+       rx="4"
+       id="rect39" />
+    <rect
+       x="130"
+       y="316"
+       width="66"
+       height="8"
+       rx="4"
+       opacity="0.85"
+       id="rect40" />
+    <rect
+       x="130"
+       y="333"
+       width="87"
+       height="8"
+       rx="4"
+       opacity="0.8"
+       id="rect41" />
+    <rect
+       x="130"
+       y="350"
+       width="54"
+       height="8"
+       rx="4"
+       opacity="0.7"
+       id="rect42" />
+  </g>
+  <!-- ====================================================== -->
+  <!-- JOBB PANEL                                             -->
+  <!-- ====================================================== -->
+  <rect
+     x="275.35709"
+     y="238.65486"
+     width="150.6082"
+     height="171.57133"
+     rx="10.589639"
+     fill="url(#rightBlue)"
+     id="rect43"
+     style="fill:url(#rightBlue);stroke-width:1.26577" />
+  <path
+     d="m 290.65322,254.39561 h 31.76892 l 9.413,8.99472 h 54.12482 q 5.88314,0 5.88314,6.74604 v 24.73548 H 290.65322 Z"
+     fill="#e0ecff"
+     id="path43"
+     style="stroke-width:1.15019" />
+  <g
+     fill="#ffffff"
+     id="g47"
+     transform="matrix(1.1766265,0,0,1.1243398,-38.802184,-26.689332)">
+    <rect
+       x="280"
+       y="299"
+       width="83"
+       height="8"
+       rx="4"
+       id="rect44" />
+    <rect
+       x="280"
+       y="316"
+       width="65"
+       height="8"
+       rx="4"
+       opacity="0.85"
+       id="rect45" />
+    <rect
+       x="280"
+       y="333"
+       width="88"
+       height="8"
+       rx="4"
+       opacity="0.8"
+       id="rect46" />
+    <rect
+       x="280"
+       y="350"
+       width="70"
+       height="8"
+       rx="4"
+       opacity="0.7"
+       id="rect47" />
+  </g>
+  <!-- Panel elválasztó -->
+  <rect
+     x="257.7077"
+     y="238.65486"
+     width="9.4130125"
+     height="141.66681"
+     rx="4.7065063"
+     fill="#073a81"
+     id="rect48"
+     style="stroke-width:1.15019" />
+  <!-- ====================================================== -->
+  <!-- KÉTIRÁNYÚ ÁTVITEL JEL                                  -->
+  <!-- ====================================================== -->
+  <!-- jobbra -->
+  <!-- balra -->
+  <!-- Alsó dekoratív él -->
+  <path
+     d="M 92.979976,464.64715 H 430.67177"
+     fill="none"
+     stroke="#3595ff"
+     stroke-width="5.75093"
+     stroke-linecap="round"
+     opacity="0.65"
+     id="path50" />
+</svg>

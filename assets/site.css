@@ -1,0 +1,3148 @@
+:root{--bg:#f5f7fb;--paper:#fff;--ink:#10182a;--muted:#667085;--line:#dce4f0;--blue:#1462f3;--header:#071426;--header2:#0d2139;--red:#d92332;--shadow:0 20px 50px rgba(20,38,75,.14)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(#f8faff,#f2f5fa);color:var(--ink)}a{color:inherit}.wrap{width:min(1460px,calc(100% - 48px));margin:auto}.site-header{position:sticky;top:0;z-index:50;background:linear-gradient(100deg,var(--header),var(--header2));box-shadow:0 8px 30px rgba(0,0,0,.12)}.navbar{min-height:82px;display:flex;align-items:center;gap:34px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;min-width:290px}.brandmark{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#0c70ff,#7e4eff);font-weight:900}.brand strong{display:block;font-size:20px}.brand small{display:block;color:#b8c6da;text-transform:uppercase;font-size:11px;letter-spacing:.08em}.navlinks{display:flex;gap:8px;align-items:center;justify-content:center;flex:1}.navlinks a,.navlinks span{padding:12px 14px;text-decoration:none;color:#dbe6f5;font-weight:750;border-radius:10px;white-space:nowrap}.navlinks a:hover,.navlinks a.active{background:rgba(255,255,255,.1);color:#fff}.navlinks .disabled{opacity:.35;cursor:not-allowed}.lang{position:relative}.lang>button{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);color:#fff;border-radius:11px;padding:11px 15px;font-weight:700;cursor:pointer}.lang-menu{display:none;position:absolute;right:0;top:48px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:7px;min-width:150px}.lang-menu.open{display:block}.lang-menu button{display:block;width:100%;border:0;background:transparent;padding:10px;text-align:left;cursor:pointer}.hero{padding:56px 0 34px}.hero-grid,.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:38px;align-items:center}.eyebrow{display:inline-flex;padding:7px 12px;border-radius:999px;background:#eaf1ff;color:#0c5be8;font-size:12px;font-weight:900;text-transform:uppercase}.hero h1,.page-hero h1{font-size:clamp(48px,5vw,76px);line-height:.98;margin:20px 0 10px;letter-spacing:-.045em}.page-hero h1{font-size:56px}.gradient{background:linear-gradient(90deg,#0a63f4,#6754ee);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:22px;font-weight:850;margin:8px 0 16px}.copy{font-size:17px;line-height:1.65;color:#465166;max-width:680px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0 16px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:11px;border:1px solid #2d70ee;background:#fff;color:#1259d8;text-decoration:none;font-weight:850}.btn.primary{background:linear-gradient(100deg,#0e64f5,#174edb);color:#fff;box-shadow:0 10px 25px rgba(19,93,235,.22)}.micro-row{display:flex;gap:12px;flex-wrap:wrap}.micro-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;min-width:220px}.micro-card strong{display:block;color:#1459d9;font-size:19px}.micro-card small{color:var(--muted)}.platforms{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:14px}.platform{display:flex;gap:7px;align-items:center;font-weight:800}.platform.future{color:#9da5b1}.badge-coming{font-size:10px;padding:3px 7px;background:var(--red);color:#fff;border-radius:999px;font-weight:900;text-transform:uppercase}.deck{height:510px;position:relative;perspective:1200px}.bc-card{position:absolute;width:84%;height:385px;right:4%;top:40px;border-radius:13px;overflow:hidden;box-shadow:0 26px 60px rgba(18,32,60,.23);transform-origin:center}.bc-card.green{right:-4%;top:72px;transform:rotateY(-17deg) scale(.88);z-index:1}.bc-card.dark{right:2%;top:58px;transform:rotateY(-12deg) scale(.94);z-index:2}.bc-card.light{right:10%;top:35px;transform:rotateY(-7deg);z-index:3}.bc-card.green .bc-window{--wbg:#0e2b1c;--wfg:#d7ffe5;--wline:#28523b;--bar:#154228;--active:#23643d}.bc-card.dark .bc-window{--wbg:#141a22;--wfg:#e6edf6;--wline:#303944;--bar:#1d2530;--active:#24394f}.bc-card.light .bc-window{--wbg:#fff;--wfg:#18202a;--wline:#d8dde5;--bar:#f4f5f7;--active:#e6effc}.bc-window{height:100%;background:var(--wbg);color:var(--wfg);border:1px solid var(--wline);font-size:10px}.bc-title{height:27px;background:linear-gradient(90deg,#234267,#284e80);color:#fff;display:flex;align-items:center;justify-content:center}.bc-menu,.bc-toolbar,.bc-drive{display:flex;gap:12px;align-items:center;padding:7px 9px;border-bottom:1px solid var(--wline);background:var(--bar)}.bc-menu span{font-weight:750}.bc-toolbar{gap:7px}.tool{width:14px;height:14px;border-radius:3px;background:linear-gradient(135deg,#2a8eff,#5fd4d8);box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}.bc-drive{justify-content:space-between;padding:5px 9px}.bc-panels{display:grid;grid-template-columns:1fr 1fr;height:238px}.bc-panel{border-right:1px solid var(--wline)}.bc-panel:last-child{border-right:0}.path{padding:6px 8px;background:var(--active);font-weight:850;border-bottom:1px solid var(--wline)}.file-head,.file-row{display:grid;grid-template-columns:1.8fr .55fr .75fr 1fr;gap:4px;padding:4px 6px;border-bottom:1px solid rgba(128,140,160,.12)}.file-head{font-weight:900;background:var(--bar)}.bc-keys{height:37px;display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:5px;background:var(--bar);border-top:1px solid var(--wline)}.bc-keys div{display:grid;place-items:center;border:1px solid var(--wline);border-radius:4px;font-size:8px}.soon-overlay{
+position:absolute;z-index:6;left:20%;right:8%;top:235px;text-align:center;
+background:rgba(20,98,243,.84);color:#fff;padding:15px 18px;
+border:1px solid rgba(255,255,255,.42);border-radius:12px;
+font-size:20px;font-weight:900;
+box-shadow:0 12px 32px rgba(20,74,170,.30);
+backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)
+}.section{padding:40px 0}.section h2{font-size:38px;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.card,.preview-box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 26px rgba(23,46,86,.05)}.card h3{margin:0 0 8px;color:#1558d5}.card p{margin:0;color:#566176;line-height:1.6}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px}.feature b{display:block;color:#145ddd;margin-bottom:5px}.feature small{color:#626d80;line-height:1.45}.page-hero{padding:44px 0 22px}.preview-box .bc-card{position:relative;width:100%;height:350px;right:auto!important;top:auto!important;transform:none!important}.table-wrap{overflow:auto;background:#fff;border:1px solid var(--line);border-radius:16px}table{border-collapse:collapse;width:100%;min-width:820px}th,td{padding:14px;border-bottom:1px solid var(--line);text-align:left}th{background:#f4f7fb}.ok{color:#16a34a;font-weight:900}.partial{color:#d97706;font-weight:900}.plugin-link{font-weight:850;color:#145fdc;text-decoration:none}.plugin-link:hover{text-decoration:underline}.note{padding:16px 18px;border-radius:14px;background:#eef4ff;border:1px solid #cddcff;color:#335274}.price-box{font-size:56px;font-weight:950;color:#165fe6}.price-box small{font-size:20px}.checks{display:grid;gap:12px}.check{padding:15px 17px;background:#fff;border:1px solid var(--line);border-radius:13px}.check strong{display:block;color:#155ad7;margin-bottom:4px}.support-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.cta-strip{display:flex;justify-content:space-between;align-items:center;gap:20px;background:linear-gradient(95deg,#edf4ff,#f7f1ff);border:1px solid #cad8fb;border-radius:18px;padding:22px 26px;margin-top:26px}.footer{margin-top:40px;background:#081426;color:#b9c8dc;padding:30px 0}.footer strong{color:#fff}@media(max-width:1050px){.hero-grid,.split{grid-template-columns:1fr}.grid,.feature-grid,.support-grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.brand{min-width:0}}@media(max-width:650px){.wrap{width:min(100% - 24px,1460px)}.grid,.feature-grid,.support-grid{grid-template-columns:1fr}.deck{height:390px}.bc-card{width:98%;height:300px}.bc-panels{height:168px}.soon-overlay{top:180px;left:8%;right:5%;font-size:15px}.navbar{gap:10px}.brand small{display:none}}
+
+.platform.active{color:#111827}
+.platform-active-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:5px 10px;border-radius:999px;
+  background:#159447;color:#fff;font-weight:900;line-height:1;
+  box-shadow:0 5px 14px rgba(21,148,71,.20)
+}
+.platform-active-badge .os-ico{filter:none}
+
+/* Match the agreed landing-page composition more closely */
+.hero{padding:44px 0 28px}
+.hero-grid{grid-template-columns:.78fr 1.22fr;gap:28px;align-items:start}
+.hero .copy{max-width:610px}
+.hero .deck{margin-top:-4px}
+.micro-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:560px}
+.micro-card{min-width:0}
+@media(max-width:1050px){
+  .hero-grid{grid-template-columns:1fr}
+  .micro-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  .micro-row{grid-template-columns:1fr}
+}
+
+
+/* ==========================================================================
+   v3 — approved Beyond Commander landing-page composition
+   ========================================================================== */
+
+.wrap{
+  width:min(1540px,calc(100% - 56px));
+}
+
+.navbar{
+  min-height:84px;
+}
+
+.brand{
+  min-width:330px;
+  gap:14px;
+}
+
+.brand-logo{
+  width:50px;
+  height:50px;
+  object-fit:contain;
+  flex:0 0 auto;
+  filter:drop-shadow(0 5px 12px rgba(0,0,0,.18));
+}
+
+.brand > span strong{
+  display:block;
+  font-size:20px;
+  letter-spacing:.025em;
+}
+
+.brand > span small{
+  display:block;
+  color:#b9c8dc;
+  font-size:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-top:2px;
+}
+
+.hero{
+  padding:42px 0 30px;
+}
+
+.hero-grid{
+  grid-template-columns:minmax(610px,.88fr) minmax(760px,1.12fr);
+  gap:24px;
+  align-items:start;
+}
+
+.hero h1{
+  font-size:clamp(58px,4.7vw,76px);
+  margin-top:20px;
+  max-width:650px;
+}
+
+.hero .lead{
+  font-size:23px;
+  max-width:650px;
+}
+
+.hero .copy{
+  max-width:630px;
+  font-size:16px;
+  line-height:1.56;
+}
+
+.actions{
+  gap:14px;
+  margin-top:23px;
+}
+
+.btn{
+  min-height:48px;
+  padding:13px 19px;
+}
+
+.btn-icon{
+  width:21px;
+  height:21px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  flex:0 0 auto;
+}
+
+.micro-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  max-width:590px;
+  margin-top:12px;
+}
+
+.micro-card{
+  min-height:76px;
+  padding:13px 15px;
+}
+
+.micro-card-icon{
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+
+.card-icon{
+  width:29px;
+  height:29px;
+  fill:none;
+  stroke:#1462f3;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  flex:0 0 auto;
+}
+
+.micro-card strong{
+  font-size:18px;
+}
+
+.micro-card small{
+  display:block;
+  margin-top:3px;
+  line-height:1.35;
+}
+
+/* Four platform names stay on one desktop row. */
+.hero-platforms{
+  display:flex;
+  flex-wrap:nowrap !important;
+  gap:14px !important;
+  white-space:nowrap;
+  max-width:650px;
+  margin-top:13px;
+}
+
+.hero-platforms .platform{
+  gap:6px;
+  font-size:13px;
+}
+
+.hero-platforms .badge-coming{
+  font-size:9px;
+  padding:3px 6px;
+}
+
+/* Larger, clearly separated perspective stack. */
+.deck{
+  height:510px;
+  position:relative;
+  perspective:1650px;
+  perspective-origin:48% 45%;
+  margin-top:-2px;
+  overflow:visible;
+}
+
+.bc-card{
+  position:absolute;
+  width:82%;
+  height:416px;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 28px 62px rgba(18,32,60,.25);
+  transform-origin:50% 50%;
+  backface-visibility:hidden;
+}
+
+.bc-card.light{
+  right:15%;
+  top:24px;
+  z-index:3;
+  transform:rotateY(-8deg) rotateZ(.15deg);
+}
+
+.bc-card.dark{
+  right:1%;
+  top:48px;
+  z-index:2;
+  transform:rotateY(-14deg) translateZ(-55px) scale(.96);
+}
+
+.bc-card.green{
+  right:-12%;
+  top:76px;
+  z-index:1;
+  transform:rotateY(-18deg) translateZ(-110px) scale(.92);
+}
+
+.bc-window{
+  font-size:10px;
+}
+
+.bc-title{
+  height:28px;
+  font-size:10px;
+}
+
+.bc-menu{
+  min-height:31px;
+  gap:12px;
+  padding:6px 10px;
+}
+
+.bc-toolbar{
+  min-height:34px;
+  padding:5px 9px;
+  gap:5px;
+}
+
+.tool{
+  width:24px;
+  height:22px;
+  border-radius:4px;
+  background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(226,232,240,.92));
+  border:1px solid rgba(88,104,125,.45);
+  box-shadow:0 1px 2px rgba(0,0,0,.08);
+  color:#215e9e;
+  font-size:10px;
+  font-weight:900;
+  display:grid;
+  place-items:center;
+  line-height:1;
+}
+
+.bc-card.dark .tool,
+.bc-card.green .tool{
+  background:rgba(255,255,255,.09);
+  border-color:rgba(255,255,255,.18);
+  color:#9ed8ff;
+  box-shadow:none;
+}
+
+.tool:nth-child(2n){color:#c78a08}
+.tool:nth-child(3n){color:#168a6a}
+.tool:nth-child(5n){color:#b33f55}
+.bc-card.dark .tool:nth-child(2n),
+.bc-card.green .tool:nth-child(2n){color:#ffd36a}
+.bc-card.dark .tool:nth-child(3n),
+.bc-card.green .tool:nth-child(3n){color:#68e6be}
+.bc-card.dark .tool:nth-child(5n),
+.bc-card.green .tool:nth-child(5n){color:#ff8fa3}
+
+.bc-drives{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-bottom:1px solid var(--wline);
+  background:var(--bar);
+}
+
+.drivebox{
+  min-width:0;
+  display:grid;
+  grid-template-columns:auto auto 1fr;
+  gap:7px;
+  align-items:center;
+  padding:5px 8px;
+  border-right:1px solid var(--wline);
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.drivebox:last-child{
+  border-right:0;
+}
+
+.drivebox span:last-child{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  opacity:.86;
+}
+
+.bc-panels{
+  height:253px;
+}
+
+.path{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.file-head,.file-row{
+  grid-template-columns:1.65fr .43fr .62fr .90fr;
+  padding:3px 7px;
+  min-height:22px;
+  align-items:center;
+}
+
+.file-row span:first-child{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.bc-status{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:var(--bar);
+  border-top:1px solid var(--wline);
+  font-size:9px;
+  opacity:.8;
+}
+
+.bc-status span{
+  padding:4px 8px;
+  border-right:1px solid var(--wline);
+}
+
+.bc-status span:last-child{
+  border-right:0;
+}
+
+.bc-keys{
+  height:37px;
+}
+
+.soon-overlay{
+  left:22%;
+  right:10%;
+  top:239px;
+  padding:15px 20px;
+  background:rgba(20,98,243,.84);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.45);
+  border-radius:11px;
+  font-size:20px;
+  letter-spacing:.005em;
+  box-shadow:0 13px 34px rgba(17,74,174,.32);
+  backdrop-filter:blur(7px);
+  -webkit-backdrop-filter:blur(7px);
+}
+
+/* Keep the green active state visually distinct from the red future badges. */
+.platform-active-badge{
+  padding:5px 10px;
+  background:#159447;
+  color:#fff;
+}
+
+/* Make the first feature row visually closer to the approved cards. */
+.section{
+  padding:34px 0 42px;
+}
+
+.grid{
+  gap:15px;
+  margin-top:18px;
+}
+
+.card{
+  padding:21px 23px;
+}
+
+/* Responsive: only smaller layouts may wrap the platform row. */
+@media(max-width:1250px){
+  .hero-grid{
+    grid-template-columns:minmax(520px,.9fr) minmax(610px,1.1fr);
+  }
+  .hero-platforms{
+    gap:9px !important;
+  }
+  .hero-platforms .platform{
+    font-size:12px;
+  }
+}
+
+@media(max-width:1050px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+  .deck{
+    height:500px;
+    max-width:900px;
+  }
+  .hero-platforms{
+    flex-wrap:wrap !important;
+  }
+}
+
+@media(max-width:650px){
+  .brand{
+    min-width:0;
+  }
+  .brand-logo{
+    width:42px;
+    height:42px;
+  }
+  .micro-row{
+    grid-template-columns:1fr;
+  }
+  .deck{
+    height:395px;
+  }
+  .bc-card{
+    width:94%;
+    height:305px;
+  }
+  .bc-card.light{right:5%;top:12px}
+  .bc-card.dark{right:-3%;top:31px}
+  .bc-card.green{right:-10%;top:49px}
+  .bc-panels{height:167px}
+  .soon-overlay{
+    left:8%;
+    right:6%;
+    top:176px;
+    font-size:15px;
+  }
+}
+
+
+/* ==========================================================================
+   v4 — home feature cards aligned to the approved reference
+   ========================================================================== */
+
+.home-feature-grid{
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:14px;
+}
+
+.home-card{
+  display:grid;
+  grid-template-columns:68px 1fr;
+  align-items:start;
+  gap:12px;
+  min-height:136px;
+  padding:22px 24px 20px;
+  border-radius:18px;
+  box-shadow:0 8px 26px rgba(22,42,82,.06);
+}
+
+.home-card-ico{
+  width:52px;
+  height:52px;
+  display:grid;
+  place-items:center;
+  color:#1a63f3;
+}
+
+.home-card-icon{
+  width:46px;
+  height:46px;
+  display:block;
+}
+
+.home-card h3{
+  margin:0 0 10px;
+  color:#155ad7;
+  font-size:17px;
+  line-height:1.15;
+}
+
+.home-card p{
+  margin:0;
+  color:#596579;
+  line-height:1.55;
+  font-size:15px;
+}
+
+.home-card p .plugin-link{
+  font-weight:900;
+}
+
+.section{
+  padding:30px 0 44px;
+}
+
+.grid{
+  gap:16px;
+}
+
+.card{
+  border:1px solid #dbe3ef;
+  box-shadow:0 8px 24px rgba(19,33,68,.05);
+}
+
+@media(max-width:1050px){
+  .home-feature-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px){
+  .home-feature-grid{
+    grid-template-columns:1fr;
+  }
+  .home-card{
+    grid-template-columns:58px 1fr;
+    min-height:0;
+    padding:18px 18px 17px;
+  }
+  .home-card-icon{
+    width:40px;
+    height:40px;
+  }
+}
+
+
+/* v6: restore the approved desktop proportions while keeping the valid v4 JS. */
+@media(min-width:1181px){
+  .wrap{width:min(1680px,calc(100% - 72px));}
+  .hero{padding:42px 0 18px;}
+  .hero-grid{
+    grid-template-columns:minmax(590px,.82fr) minmax(820px,1.18fr);
+    gap:32px;
+    align-items:start;
+  }
+  .hero h1{
+    font-size:clamp(64px,4.6vw,84px);
+    line-height:.95;
+    max-width:680px;
+  }
+  .hero .lead{font-size:23px;max-width:700px;}
+  .hero .copy{font-size:16.5px;line-height:1.56;max-width:665px;}
+  .deck{height:525px;margin-top:-8px;perspective:1850px;}
+  .bc-card{width:87%;height:430px;}
+  .bc-card.light{right:15%;top:22px;transform:rotateY(-7deg) rotateZ(.12deg);}
+  .bc-card.dark{right:0;top:49px;transform:rotateY(-13deg) translateZ(-60px) scale(.965);}
+  .bc-card.green{right:-14%;top:78px;transform:rotateY(-18deg) translateZ(-116px) scale(.92);}
+  .bc-panels{height:262px;}
+  .soon-overlay{left:23%;right:9%;top:242px;font-size:20px;}
+  .platforms.hero-platforms{flex-wrap:nowrap!important;gap:16px!important;max-width:720px;}
+  .home-feature-grid{grid-template-columns:repeat(3,1fr);gap:18px;}
+  .home-card{grid-template-columns:72px 1fr;min-height:140px;padding:22px 24px;}
+  .home-card-ico{width:58px;height:58px;}
+  .home-card-icon{width:49px;height:49px;}
+}
+
+
+/* ==========================================================================
+   v7 — BC application mock redesigned to match the real UI more closely
+   ========================================================================== */
+
+/* Wider stage, with the app mock occupying more of the right half */
+.hero-grid{
+  grid-template-columns:minmax(560px,.76fr) minmax(940px,1.24fr);
+  gap:26px;
+}
+
+/* Reverse the perspective direction: the stack now fans to the LEFT. */
+.deck{
+  height:560px;
+  perspective:2200px;
+  perspective-origin:58% 42%;
+}
+
+.bc-card{
+  width:90%;
+  height:470px;
+  border-radius:10px;
+  box-shadow:0 28px 68px rgba(17,31,57,.28);
+}
+
+.bc-card.light{
+  right:8%;
+  top:22px;
+  z-index:3;
+  transform:rotateY(8deg) rotateZ(.1deg);
+}
+
+.bc-card.dark{
+  right:18%;
+  top:46px;
+  z-index:2;
+  transform:rotateY(13deg) translateZ(-58px) scale(.968);
+}
+
+.bc-card.green{
+  right:28%;
+  top:70px;
+  z-index:1;
+  transform:rotateY(18deg) translateZ(-118px) scale(.93);
+}
+
+/* Real BC-like skin */
+.bc-card.light .bc-window{
+  --wbg:#f5f5f5;
+  --wfg:#101820;
+  --wline:#9da7b0;
+  --bar:#ececec;
+  --path:#7b756f;
+  --pathActive:#278fd8;
+  --header:#d1ebfb;
+  --select:#2c8fd8;
+  --selectFg:#fff;
+}
+
+.bc-card.dark .bc-window{
+  --wbg:#1b2633;
+  --wfg:#e4ebf4;
+  --wline:#35506a;
+  --bar:#223142;
+  --path:#2d3c4b;
+  --pathActive:#2e78a7;
+  --header:#314a61;
+  --select:#2f7ab0;
+  --selectFg:#fff;
+}
+
+.bc-card.green .bc-window{
+  --wbg:#153220;
+  --wfg:#e1f3e6;
+  --wline:#2e5e45;
+  --bar:#1f4330;
+  --path:#305241;
+  --pathActive:#1f8f61;
+  --header:#275e45;
+  --select:#1e8c60;
+  --selectFg:#fff;
+}
+
+.bc-window{
+  height:100%;
+  background:var(--wbg);
+  color:var(--wfg);
+  border:1px solid var(--wline);
+  font-size:11px;
+  display:flex;
+  flex-direction:column;
+}
+
+.bc-titlebar{
+  height:30px;
+  background:linear-gradient(180deg,#416ea6,#355f92);
+  color:#fff;
+  display:grid;
+  grid-template-columns:72px 1fr 88px;
+  align-items:center;
+  border-bottom:1px solid rgba(0,0,0,.22);
+  flex:0 0 auto;
+}
+
+.bc-title{
+  height:auto;
+  background:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+  letter-spacing:.02em;
+  font-weight:500;
+}
+
+.bc-win-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:0 10px;
+}
+
+.bc-win-actions.left span{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#90a6c6;
+  opacity:.9;
+}
+
+.bc-win-actions.right{
+  justify-content:flex-end;
+}
+
+.bc-win-actions.right span{
+  width:17px;
+  height:17px;
+  border-radius:50%;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);
+}
+.bc-win-actions.right .violet{background:#8451b8}
+.bc-win-actions.right .green{background:#19ac7e}
+.bc-win-actions.right .pink{background:#c53c6f}
+
+.bc-menu{
+  min-height:30px;
+  display:flex;
+  align-items:center;
+  gap:23px;
+  padding:0 12px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+  font-size:11px;
+}
+
+.bc-menu span{
+  font-weight:500;
+}
+
+.bc-toolbar{
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  padding:0 10px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+}
+
+.tool{
+  width:23px;
+  height:22px;
+  border-radius:2px;
+  display:grid;
+  place-items:center;
+  background:#f3f3f3;
+  border:1px solid #c3c3c3;
+  color:#4a657d;
+  font-size:11px;
+  font-weight:800;
+  box-shadow:none;
+}
+.bc-card.dark .tool,
+.bc-card.green .tool{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.12);
+  color:#d8e8f7;
+}
+.tool:nth-child(1),.tool:nth-child(6),.tool:nth-child(14){color:#2f9ed4}
+.tool:nth-child(2),.tool:nth-child(7),.tool:nth-child(8){color:#c28b18}
+.tool:nth-child(4),.tool:nth-child(5),.tool:nth-child(13){color:#4f7fc8}
+.tool:nth-child(9){color:#bb6b1f}
+.tool:nth-child(10){color:#c54b4b}
+.tool:nth-child(11){color:#3c8a56}
+
+.bc-tabs{
+  min-height:31px;
+  display:flex;
+  align-items:flex-end;
+  gap:6px;
+  padding:4px 10px 3px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+}
+
+.app-tab{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  height:22px;
+  padding:0 10px;
+  border:1px solid var(--wline);
+  background:#dadfe3;
+  border-radius:2px;
+  font-size:10px;
+  white-space:nowrap;
+}
+.app-tab::before{
+  content:'▣';
+  color:#5b83a8;
+  font-size:9px;
+}
+.app-tab.active{
+  background:#d7edf9;
+  border-color:#7fa9ca;
+  font-weight:700;
+}
+.bc-card.dark .app-tab,
+.bc-card.green .app-tab{
+  background:rgba(255,255,255,.08);
+}
+
+.bc-workarea{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  flex:1 1 auto;
+}
+
+.bc-panel{
+  display:flex;
+  flex-direction:column;
+  border-right:1px solid var(--wline);
+}
+.bc-panel:last-child{border-right:0}
+
+.panel-drive{
+  height:29px;
+  display:grid;
+  grid-template-columns:auto auto 1fr;
+  align-items:center;
+  gap:10px;
+  padding:0 8px;
+  background:#ededed;
+  border-bottom:1px solid var(--wline);
+  font-size:10px;
+}
+.bc-card.dark .panel-drive,
+.bc-card.green .panel-drive{
+  background:rgba(255,255,255,.06);
+}
+.drive-sel{
+  display:inline-flex;
+  align-items:center;
+  min-width:56px;
+  height:18px;
+  padding:0 8px;
+  border:1px solid #8b949b;
+  background:#f6f6f6;
+}
+.bc-card.dark .drive-sel,
+.bc-card.green .drive-sel{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.18);
+}
+
+.path{
+  height:22px;
+  display:flex;
+  align-items:center;
+  padding:0 8px;
+  background:var(--path);
+  color:#fff;
+  font-weight:700;
+  border-bottom:1px solid var(--wline);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.path.active{
+  background:var(--pathActive);
+}
+
+.file-head{
+  display:grid;
+  grid-template-columns:1.9fr .38fr .50fr .78fr .40fr;
+  gap:0;
+  padding:0;
+  min-height:24px;
+  align-items:center;
+  background:var(--header);
+  border-bottom:1px solid #8fa3b4;
+  font-weight:900;
+  font-size:11px;
+}
+.file-head span{
+  padding:0 6px;
+  border-right:1px solid rgba(90,103,116,.45);
+}
+.file-head span:last-child{border-right:0}
+
+.file-list{
+  flex:1 1 auto;
+  overflow:hidden;
+  background:var(--wbg);
+}
+
+.file-row{
+  display:grid;
+  grid-template-columns:1.9fr .38fr .50fr .78fr .40fr;
+  gap:0;
+  min-height:27px;
+  align-items:center;
+  border-bottom:1px solid rgba(150,160,170,.14);
+}
+.file-row span{
+  padding:0 6px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.file-row.selected{
+  background:var(--select);
+  color:var(--selectFg);
+}
+.file-row.selected span{
+  color:inherit;
+}
+
+.bc-footer-info{
+  height:28px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  background:var(--wbg);
+  border-top:1px solid var(--wline);
+  font-size:10px;
+}
+.bc-footer-info span{
+  padding:0 10px;
+  border-right:1px solid var(--wline);
+}
+.bc-footer-info span:last-child{border-right:0}
+
+.bc-bottom-strip{
+  height:24px;
+  display:grid;
+  grid-template-columns:1fr auto auto auto;
+  align-items:center;
+  gap:8px;
+  padding:0 8px;
+  background:#efefef;
+  border-top:1px solid var(--wline);
+  font-size:10px;
+}
+.bc-card.dark .bc-bottom-strip,
+.bc-card.green .bc-bottom-strip{
+  background:rgba(255,255,255,.05);
+}
+
+.bc-keys{
+  height:31px;
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:2px;
+  padding:0 6px 6px;
+  background:var(--wbg);
+  border-top:1px solid var(--wline);
+}
+.bc-keys div{
+  height:24px;
+  display:grid;
+  place-items:center;
+  border:1px solid #9a9a9a;
+  border-radius:0;
+  background:#ececec;
+  font-size:10px;
+}
+.bc-card.dark .bc-keys div,
+.bc-card.green .bc-keys div{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.14);
+}
+
+.soon-overlay{
+  left:19%;
+  right:15%;
+  top:246px;
+  background:rgba(31,110,242,.86);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.46);
+  box-shadow:0 13px 34px rgba(19,85,199,.32);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+}
+
+/* Make the hero match the approved card section proportions more closely. */
+.hero + .section{
+  padding-top:2px;
+}
+
+@media(max-width:1500px){
+  .deck{height:530px}
+  .bc-card{height:442px}
+  .bc-card.green{right:23%}
+  .bc-card.dark{right:14%}
+  .bc-card.light{right:6%}
+  .file-row{min-height:24px}
+}
+
+@media(max-width:1180px){
+  .deck{
+    max-width:980px;
+  }
+}
+
+@media(max-width:760px){
+  .bc-card{
+    width:96%;
+    height:330px;
+  }
+  .bc-card.light{right:2%;top:10px}
+  .bc-card.dark{right:10%;top:28px}
+  .bc-card.green{right:18%;top:44px}
+  .bc-titlebar{grid-template-columns:42px 1fr 60px}
+  .bc-menu{gap:10px;font-size:9px}
+  .bc-tabs{display:none}
+  .file-head,.file-row{grid-template-columns:1.7fr .42fr .58fr .82fr .42fr}
+  .soon-overlay{top:182px;left:8%;right:8%;font-size:15px}
+}
+
+
+/* ==========================================================================
+   v8 — BC mock closer to the supplied screenshot + corrected card flow
+   ========================================================================== */
+
+/* Keep the application preview on the right and prevent overlap with left content. */
+.hero-grid{
+  grid-template-columns:minmax(560px,.80fr) minmax(860px,1.20fr);
+  gap:32px;
+  align-items:start;
+}
+
+.deck{
+  height:590px;
+  margin-top:8px;
+  perspective:2300px;
+  perspective-origin:40% 36%;
+  overflow:visible;
+  position:relative;
+}
+
+/* Cards now cascade downwards to the RIGHT, not into the content block. */
+.bc-card{
+  position:absolute;
+  width:84%;
+  height:510px;
+  left:0;
+  right:auto;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 28px 72px rgba(17,31,57,.28);
+  transform-origin:center;
+}
+
+.bc-card.light{
+  left:12%;
+  top:6px;
+  z-index:3;
+  transform:rotateY(-7deg) rotateZ(.08deg);
+}
+
+.bc-card.dark{
+  left:20%;
+  top:28px;
+  z-index:2;
+  transform:rotateY(-12deg) translateZ(-48px) scale(.965);
+}
+
+.bc-card.green{
+  left:28%;
+  top:50px;
+  z-index:1;
+  transform:rotateY(-17deg) translateZ(-96px) scale(.93);
+}
+
+/* Window theme closer to the actual Beyond Commander screenshot. */
+.bc-card.light .bc-window{
+  --wbg:#f5f5f5;
+  --wfg:#111a21;
+  --wline:#98a3ae;
+  --bar:#efefef;
+  --tab:#d9dfe4;
+  --path:#6e6861;
+  --pathActive:#2b90d8;
+  --header:#cdebf9;
+  --select:#2b8fd8;
+  --selectFg:#fff;
+  --key:#ececec;
+}
+
+.bc-card.dark .bc-window{
+  --wbg:#17202a;
+  --wfg:#e7edf5;
+  --wline:#344a5e;
+  --bar:#202d39;
+  --tab:#2b3948;
+  --path:#394958;
+  --pathActive:#2f84b7;
+  --header:#355064;
+  --select:#2f7fb6;
+  --selectFg:#fff;
+  --key:#273440;
+}
+
+.bc-card.green .bc-window{
+  --wbg:#163021;
+  --wfg:#e3f4e7;
+  --wline:#2f6147;
+  --bar:#1e4230;
+  --tab:#28533d;
+  --path:#2f5440;
+  --pathActive:#218c61;
+  --header:#2a6347;
+  --select:#22895f;
+  --selectFg:#fff;
+  --key:#264636;
+}
+
+.bc-window{
+  height:100%;
+  background:var(--wbg);
+  color:var(--wfg);
+  border:1px solid var(--wline);
+  display:flex;
+  flex-direction:column;
+  font-size:11px;
+}
+
+.bc-titlebar{
+  height:31px;
+  display:grid;
+  grid-template-columns:26px 1fr 72px;
+  align-items:center;
+  padding:0 8px;
+  background:linear-gradient(180deg,#4672ab,#345f92);
+  color:#fff;
+  border-bottom:1px solid rgba(0,0,0,.22);
+  flex:0 0 auto;
+}
+
+.bc-appicon{
+  width:16px;
+  height:16px;
+  border-radius:3px;
+  background:linear-gradient(180deg,#6ea9ff,#355dd8);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);
+}
+
+.bc-title{
+  background:none;
+  height:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+  font-weight:500;
+  letter-spacing:.02em;
+}
+
+.bc-win-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+}
+.bc-win-actions span{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+}
+.bc-win-actions .violet{background:#8550b9}
+.bc-win-actions .green{background:#19af80}
+.bc-win-actions .pink{background:#ce4475}
+
+.bc-menu{
+  min-height:29px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:0 10px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+  font-size:11px;
+}
+.bc-menu span{font-weight:500}
+
+.bc-toolbar{
+  min-height:39px;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  padding:0 10px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+}
+.tool{
+  width:24px;
+  height:22px;
+  display:grid;
+  place-items:center;
+  border-radius:2px;
+  background:#f7f7f7;
+  border:1px solid #c8c8c8;
+  color:#49627b;
+  font-size:11px;
+  font-weight:800;
+  box-shadow:none;
+}
+.sep{
+  width:1px;
+  height:24px;
+  background:rgba(120,130,140,.72);
+  margin:0 3px;
+}
+.bc-card.dark .tool,.bc-card.green .tool{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.12);
+  color:#d8e7f6;
+}
+.bc-card.dark .sep,.bc-card.green .sep{
+  background:rgba(255,255,255,.18);
+}
+.tool.cyan{color:#2f9bd0}
+.tool.amber{color:#c8941a}
+.tool.blue{color:#537cc8}
+.tool.orange{color:#ba6f1e}
+.tool.red{color:#c04b4b}
+.tool.green{color:#3f8d58}
+.tool.gray{color:#687786}
+.tool.sand{color:#8d7a4b}
+
+.bc-tabs{
+  min-height:31px;
+  display:flex;
+  align-items:flex-end;
+  gap:6px;
+  padding:3px 9px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+}
+.app-tab{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  height:22px;
+  padding:0 10px;
+  border:1px solid var(--wline);
+  border-radius:2px;
+  background:var(--tab);
+  font-size:10px;
+}
+.app-tab::before{
+  content:'▣';
+  color:#5a86ae;
+  font-size:9px;
+}
+.app-tab.active{
+  background:#d9edf9;
+  border-color:#7ea9cb;
+  font-weight:700;
+}
+.bc-card.dark .app-tab.active,
+.bc-card.green .app-tab.active{
+  background:rgba(120,180,220,.20);
+  border-color:rgba(255,255,255,.22);
+}
+
+.bc-panelshell{
+  display:grid;
+  grid-template-columns:1fr 34px 1fr;
+  flex:1 1 auto;
+  min-height:0;
+}
+
+.bc-panel{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  border-right:1px solid var(--wline);
+}
+.bc-panelshell .bc-panel:last-child{
+  border-right:0;
+}
+
+.panel-drive{
+  height:28px;
+  display:grid;
+  grid-template-columns:auto auto 1fr;
+  gap:9px;
+  align-items:center;
+  padding:0 8px;
+  background:#efefef;
+  border-bottom:1px solid var(--wline);
+  font-size:10px;
+}
+.bc-card.dark .panel-drive,
+.bc-card.green .panel-drive{
+  background:rgba(255,255,255,.06);
+}
+.drive-sel{
+  display:inline-flex;
+  align-items:center;
+  min-width:56px;
+  height:18px;
+  padding:0 7px;
+  border:1px solid #8f979e;
+  background:#f8f8f8;
+  font-size:10px;
+}
+.bc-card.dark .drive-sel,.bc-card.green .drive-sel{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.18);
+}
+
+.path{
+  height:22px;
+  display:flex;
+  align-items:center;
+  padding:0 8px;
+  background:var(--path);
+  color:#fff;
+  font-weight:700;
+  border-bottom:1px solid var(--wline);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.path.active{background:var(--pathActive)}
+
+.file-head{
+  display:grid;
+  grid-template-columns:1.8fr .33fr .50fr .76fr .36fr;
+  align-items:center;
+  min-height:24px;
+  background:var(--header);
+  border-bottom:1px solid #90a5b7;
+  font-weight:900;
+  font-size:11px;
+}
+.file-head span{
+  padding:0 6px;
+  border-right:1px solid rgba(100,115,128,.44);
+}
+.file-head span:last-child{border-right:0}
+
+.file-list{
+  flex:1 1 auto;
+  overflow:hidden;
+  background:var(--wbg);
+}
+.file-row{
+  display:grid;
+  grid-template-columns:1.8fr .33fr .50fr .76fr .36fr;
+  align-items:center;
+  min-height:27px;
+  border-bottom:1px solid rgba(150,160,170,.14);
+  font-size:11px;
+}
+.file-row span{
+  padding:0 6px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.file-row.selected{
+  background:var(--select);
+  color:var(--selectFg);
+}
+
+.bc-midtools{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  padding-top:70px;
+  background:var(--bar);
+  border-right:1px solid var(--wline);
+  border-left:1px solid var(--wline);
+}
+.bc-midtools span{
+  width:20px;
+  height:20px;
+  display:grid;
+  place-items:center;
+  color:#8f6f29;
+  font-size:14px;
+}
+.bc-card.dark .bc-midtools span,
+.bc-card.green .bc-midtools span{
+  color:#d7e4f2;
+}
+
+.bc-footer-info{
+  height:27px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  background:var(--wbg);
+  border-top:1px solid var(--wline);
+  font-size:10px;
+}
+.bc-footer-info span{
+  padding:0 10px;
+  border-right:1px solid var(--wline);
+}
+.bc-footer-info span:last-child{border-right:0}
+
+.bc-panel-tools{
+  height:27px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:0;
+  background:#efefef;
+  border-top:1px solid var(--wline);
+  font-size:10px;
+}
+.bc-card.dark .bc-panel-tools,
+.bc-card.green .bc-panel-tools{
+  background:rgba(255,255,255,.05);
+}
+.bc-panel-tools .left,
+.bc-panel-tools .right{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:0 8px;
+  min-width:0;
+}
+.bc-panel-tools .left{border-right:1px solid var(--wline)}
+.bc-panel-tools .slider{
+  width:64px;
+  height:3px;
+  background:#8ca5bd;
+  position:relative;
+  border-radius:9px;
+}
+.bc-panel-tools .slider::after{
+  content:'';
+  width:10px;
+  height:10px;
+  border-radius:2px;
+  background:#2b90d8;
+  position:absolute;
+  left:26px;
+  top:-3px;
+}
+
+.bc-cmdline{
+  height:24px;
+  display:grid;
+  grid-template-columns:120px 1fr;
+  align-items:center;
+  gap:8px;
+  padding:0 8px;
+  background:#efefef;
+  border-top:1px solid var(--wline);
+  font-size:10px;
+}
+.bc-card.dark .bc-cmdline,
+.bc-card.green .bc-cmdline{
+  background:rgba(255,255,255,.05);
+}
+
+.bc-keys{
+  height:31px;
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:2px;
+  padding:0 6px 6px;
+  background:var(--wbg);
+  border-top:1px solid var(--wline);
+}
+.bc-keys div{
+  height:24px;
+  display:grid;
+  place-items:center;
+  background:var(--key);
+  border:1px solid #9a9a9a;
+  font-size:10px;
+}
+.bc-card.dark .bc-keys div,
+.bc-card.green .bc-keys div{
+  border-color:rgba(255,255,255,.16);
+}
+
+/* Overlay centered inside the main/front app card only. */
+.soon-overlay{
+  left:30%;
+  right:11%;
+  top:246px;
+  background:rgba(30,109,241,.86);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.44);
+  box-shadow:0 12px 34px rgba(20,83,192,.28);
+}
+
+/* Slightly lower the feature cards area so the hero has breathing room. */
+.hero + .section{
+  padding-top:12px;
+}
+
+@media(max-width:1500px){
+  .hero-grid{
+    grid-template-columns:minmax(520px,.82fr) minmax(720px,1.18fr);
+  }
+  .deck{height:560px}
+  .bc-card{height:470px;width:86%}
+  .bc-card.light{left:8%}
+  .bc-card.dark{left:16%}
+  .bc-card.green{left:24%}
+  .soon-overlay{top:226px}
+}
+
+@media(max-width:1180px){
+  .hero-grid{grid-template-columns:1fr}
+  .deck{height:520px;max-width:980px;margin:0 auto}
+}
+
+@media(max-width:760px){
+  .deck{height:390px}
+  .bc-card{
+    width:96%;
+    height:330px;
+  }
+  .bc-card.light{left:0;top:8px}
+  .bc-card.dark{left:6%;top:24px}
+  .bc-card.green{left:12%;top:40px}
+  .bc-menu{gap:10px;font-size:9px}
+  .bc-tabs{display:none}
+  .bc-panelshell{grid-template-columns:1fr 20px 1fr}
+  .bc-midtools{padding-top:54px;gap:6px}
+  .bc-panel-tools,.bc-cmdline{display:none}
+  .file-head,.file-row{grid-template-columns:1.55fr .28fr .45fr .70fr .34fr}
+  .soon-overlay{left:16%;right:10%;top:178px;font-size:15px}
+}
+
+
+/* ==========================================================================
+   v9 — bottom-to-top card stack + denser filesystem like the reference
+   ========================================================================== */
+
+.hero-grid{
+  grid-template-columns:minmax(560px,.80fr) minmax(860px,1.20fr);
+  gap:32px;
+  align-items:start;
+}
+
+.deck{
+  height:600px;
+  margin-top:8px;
+  perspective:2300px;
+  perspective-origin:40% 42%;
+  overflow:visible;
+  position:relative;
+}
+
+/* Bottom-to-top cascade: front card sits lower, rear cards rise upward. */
+.bc-card{
+  position:absolute;
+  width:84%;
+  height:520px;
+  left:0;
+  right:auto;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 28px 72px rgba(17,31,57,.28);
+  transform-origin:center;
+}
+
+.bc-card.light{
+  left:12%;
+  top:54px;
+  z-index:3;
+  transform:rotateY(-7deg) rotateZ(.08deg);
+}
+
+.bc-card.dark{
+  left:20%;
+  top:30px;
+  z-index:2;
+  transform:rotateY(-12deg) translateZ(-48px) scale(.965);
+}
+
+.bc-card.green{
+  left:28%;
+  top:8px;
+  z-index:1;
+  transform:rotateY(-17deg) translateZ(-96px) scale(.93);
+}
+
+/* Increase file density to better match the supplied screenshot. */
+.bc-window{
+  font-size:10px;
+}
+
+.bc-titlebar{
+  height:29px;
+}
+
+.bc-menu{
+  min-height:27px;
+  gap:18px;
+  font-size:10px;
+}
+
+.bc-toolbar{
+  min-height:36px;
+}
+
+.bc-tabs{
+  min-height:29px;
+}
+
+.app-tab{
+  height:20px;
+  font-size:9px;
+}
+
+.bc-panelshell{
+  grid-template-columns:1fr 28px 1fr;
+}
+
+.panel-drive{
+  height:24px;
+  font-size:9px;
+  gap:8px;
+}
+
+.drive-sel{
+  min-width:50px;
+  height:16px;
+  font-size:9px;
+}
+
+.path{
+  height:18px;
+  font-size:10px;
+}
+
+.file-head{
+  min-height:21px;
+  font-size:10px;
+}
+
+.file-row{
+  min-height:22px;
+  font-size:10px;
+}
+
+.bc-midtools{
+  padding-top:64px;
+  gap:8px;
+}
+
+.bc-midtools span{
+  width:18px;
+  height:18px;
+  font-size:13px;
+}
+
+.bc-footer-info{
+  height:24px;
+  font-size:9px;
+}
+
+.bc-panel-tools{
+  height:24px;
+  font-size:9px;
+}
+
+.bc-cmdline{
+  height:22px;
+  font-size:9px;
+}
+
+.bc-keys{
+  height:28px;
+}
+
+.bc-keys div{
+  height:21px;
+  font-size:9px;
+}
+
+/* Keep the callout centered within the front card. */
+.soon-overlay{
+  left:30%;
+  right:11%;
+  top:250px;
+}
+
+@media(max-width:1500px){
+  .deck{height:570px}
+  .bc-card{height:492px;width:86%}
+  .bc-card.light{left:8%;top:46px}
+  .bc-card.dark{left:16%;top:24px}
+  .bc-card.green{left:24%;top:4px}
+  .soon-overlay{top:236px}
+}
+
+@media(max-width:1180px){
+  .hero-grid{grid-template-columns:1fr}
+  .deck{height:520px;max-width:980px;margin:0 auto}
+}
+
+@media(max-width:760px){
+  .deck{height:390px}
+  .bc-card{width:96%;height:336px}
+  .bc-card.light{left:0;top:34px}
+  .bc-card.dark{left:6%;top:18px}
+  .bc-card.green{left:12%;top:4px}
+  .bc-panelshell{grid-template-columns:1fr 18px 1fr}
+  .bc-midtools{padding-top:48px;gap:5px}
+  .file-head,.file-row{grid-template-columns:1.55fr .28fr .45fr .70fr .34fr}
+  .soon-overlay{left:16%;right:10%;top:178px;font-size:15px}
+}
+
+
+/* ==========================================================================
+   v10 — more visible themed cards + denser panel listing
+   ========================================================================== */
+
+/* Reveal more of the dark and green theme cards behind the front window. */
+.deck{
+  height:610px;
+}
+
+.bc-card{
+  width:79%;
+  height:525px;
+}
+
+.bc-card.light{
+  left:4%;
+  top:64px;
+}
+
+.bc-card.dark{
+  left:14%;
+  top:34px;
+}
+
+.bc-card.green{
+  left:24%;
+  top:4px;
+}
+
+/* Make the file area visually denser, closer to the supplied BC screenshot. */
+.bc-window{
+  font-size:9px;
+}
+
+.bc-titlebar{
+  height:28px;
+}
+
+.bc-menu{
+  min-height:25px;
+  gap:16px;
+  font-size:9px;
+}
+
+.bc-toolbar{
+  min-height:34px;
+}
+
+.bc-tabs{
+  min-height:27px;
+  padding:2px 9px;
+}
+
+.app-tab{
+  height:18px;
+  font-size:8px;
+  padding:0 8px;
+}
+
+.bc-panelshell{
+  grid-template-columns:1fr 26px 1fr;
+}
+
+.panel-drive{
+  height:22px;
+  font-size:8px;
+  gap:7px;
+}
+
+.drive-sel{
+  min-width:46px;
+  height:15px;
+  font-size:8px;
+}
+
+.path{
+  height:16px;
+  font-size:9px;
+  padding:0 6px;
+}
+
+.file-head{
+  min-height:19px;
+  font-size:9px;
+}
+
+.file-row{
+  min-height:18px;
+  font-size:9px;
+}
+
+.file-head span,
+.file-row span{
+  padding:0 5px;
+}
+
+.bc-midtools{
+  padding-top:58px;
+  gap:6px;
+}
+
+.bc-midtools span{
+  width:16px;
+  height:16px;
+  font-size:12px;
+}
+
+.bc-footer-info{
+  height:21px;
+  font-size:8px;
+}
+
+.bc-panel-tools{
+  height:22px;
+  font-size:8px;
+}
+
+.bc-cmdline{
+  height:20px;
+  font-size:8px;
+}
+
+.bc-keys{
+  height:26px;
+  padding:0 5px 5px;
+}
+
+.bc-keys div{
+  height:19px;
+  font-size:8px;
+}
+
+/* Keep the CTA overlay centered within the front card after the geometry changes. */
+.soon-overlay{
+  left:29%;
+  right:10%;
+  top:250px;
+}
+
+@media(max-width:1500px){
+  .deck{height:585px}
+  .bc-card{width:82%;height:500px}
+  .bc-card.light{left:3%;top:54px}
+  .bc-card.dark{left:12%;top:28px}
+  .bc-card.green{left:21%;top:3px}
+  .file-row{min-height:18px}
+  .soon-overlay{top:238px}
+}
+
+@media(max-width:1180px){
+  .deck{height:530px}
+  .bc-card{width:88%;height:455px}
+  .bc-card.light{left:1%;top:46px}
+  .bc-card.dark{left:9%;top:22px}
+  .bc-card.green{left:17%;top:2px}
+}
+
+@media(max-width:760px){
+  .deck{height:390px}
+  .bc-card{width:96%;height:336px}
+  .bc-card.light{left:0;top:34px}
+  .bc-card.dark{left:6%;top:18px}
+  .bc-card.green{left:12%;top:4px}
+  .file-head,.file-row{grid-template-columns:1.55fr .28fr .45fr .70fr .34fr}
+}
+
+
+/* ==========================================================================\n   v11 — hero app view aligned to the supplied reference + mobile fix\n   ========================================================================== */
+
+.hero-grid{
+  grid-template-columns:minmax(560px,.80fr) minmax(880px,1.20fr);
+  gap:30px;
+  align-items:start;
+}
+
+.deck{
+  height:560px;
+  margin-top:18px;
+  perspective:2200px;
+  perspective-origin:34% 42%;
+  overflow:visible;
+  position:relative;
+}
+
+/* Front light card lower, themed cards rise upward to the right. */
+.bc-card{
+  position:absolute;
+  width:73%;
+  height:430px;
+  left:0;
+  border-radius:18px;
+  overflow:visible;
+  box-shadow:0 22px 62px rgba(17,31,57,.24);
+}
+.bc-card.light{left:0;top:88px;z-index:3;transform:rotateY(-5deg) rotateZ(-.15deg)}
+.bc-card.dark{left:20%;top:28px;z-index:2;transform:rotateY(-13deg) translateZ(-50px) scale(.95)}
+.bc-card.green{left:35%;top:6px;z-index:1;transform:rotateY(-18deg) translateZ(-98px) scale(.90)}
+
+.bc-window{
+  height:100%;
+  border-radius:14px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  border:1px solid var(--wline);
+  box-shadow:0 10px 26px rgba(0,0,0,.10);
+}
+
+.bc-card.light .bc-window{
+  --wbg:#ffffff;
+  --wfg:#1b1d20;
+  --wline:#d4d7dc;
+  --bar:#fafafa;
+  --path:#ffffff;
+  --pathActive:#ffffff;
+  --header:#ffffff;
+  --select:#ffffff;
+  --selectFg:#111;
+  --footer:#fbfbfb;
+}
+.bc-card.dark .bc-window{
+  --wbg:#142338;
+  --wfg:#ecf3ff;
+  --wline:#26435c;
+  --bar:#1b2f49;
+  --path:#12273b;
+  --pathActive:#0e2439;
+  --header:#1a3450;
+  --select:#1d3959;
+  --selectFg:#fff;
+  --footer:#18283b;
+}
+.bc-card.green .bc-window{
+  --wbg:#173c27;
+  --wfg:#ecf9ee;
+  --wline:#2a6545;
+  --bar:#1e4a31;
+  --path:#163a26;
+  --pathActive:#183f2a;
+  --header:#225338;
+  --select:#265c3d;
+  --selectFg:#fff;
+  --footer:#173926;
+}
+
+.bc-titlebar{
+  height:32px;
+  display:grid;
+  grid-template-columns:1fr 72px;
+  align-items:center;
+  padding:0 12px;
+  background:linear-gradient(180deg,#fefefe,#ededed);
+  color:#222;
+  border-bottom:1px solid var(--wline);
+  font-size:10px;
+  font-weight:600;
+}
+.bc-card.dark .bc-titlebar,
+.bc-card.green .bc-titlebar{
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));
+  color:#f3f7fc;
+}
+.bc-title{display:flex;align-items:center;justify-content:center;background:none;height:auto}
+.bc-win-actions{display:flex;justify-content:flex-end;gap:10px}
+.bc-win-actions span{width:12px;height:12px;border-radius:50%}
+.bc-win-actions .violet{background:#8550b9}
+.bc-win-actions .green{background:#1ab07f}
+.bc-win-actions .pink{background:#cf4676}
+
+.bc-menu{
+  min-height:34px;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  padding:0 14px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+  color:var(--wfg);
+  font-size:11px;
+}
+.bc-toolbar{
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  padding:0 12px;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+}
+.tool{
+  width:24px;height:24px;display:grid;place-items:center;border-radius:3px;
+  background:#fff;border:1px solid #d6d6d6;font-size:11px;font-weight:800;color:#547089
+}
+.bc-card.dark .tool,.bc-card.green .tool{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#e4eff9}
+.sep{width:1px;height:24px;background:rgba(120,130,140,.55);margin:0 4px}
+.bc-card.dark .sep,.bc-card.green .sep{background:rgba(255,255,255,.16)}
+.tool.cyan{color:#2495d0}.tool.amber{color:#c48c16}.tool.blue{color:#4b74c3}.tool.orange{color:#b56d1c}.tool.red{color:#bf4a49}.tool.green{color:#3a8b57}.tool.gray{color:#6c7984}.tool.sand{color:#8c7844}
+
+.bc-barline{
+  min-height:28px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  background:var(--bar);
+  border-bottom:1px solid var(--wline);
+  font-size:10px;
+}
+.drivebox{padding:0 10px;border-right:1px solid var(--wline);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.drivebox:last-child{border-right:0}
+
+.bc-panelshell{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  flex:1 1 auto;
+  min-height:0;
+}
+.bc-panel{display:flex;flex-direction:column;min-width:0;border-right:1px solid var(--wline);background:var(--wbg)}
+.bc-panel:last-child{border-right:0}
+.path{
+  height:28px;display:flex;align-items:center;padding:0 10px;background:var(--path);color:var(--wfg);
+  border-bottom:1px solid var(--wline);font-weight:600;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis
+}
+.path.active{background:var(--pathActive)}
+.file-head{
+  display:grid;grid-template-columns:1.75fr .42fr .48fr .78fr;align-items:center;
+  min-height:30px;background:var(--header);border-bottom:1px solid var(--wline);font-weight:700;font-size:11px;color:var(--wfg)
+}
+.file-head span,.file-row span{padding:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.file-row{
+  display:grid;grid-template-columns:1.75fr .42fr .48fr .78fr;align-items:center;
+  min-height:28px;border-bottom:1px solid rgba(160,170,180,.18);font-size:11px;color:var(--wfg);background:var(--wbg)
+}
+.file-row.selected{background:#f7f2d1;color:#111}
+.bc-card.dark .file-row.selected,.bc-card.green .file-row.selected{background:rgba(255,255,255,.12);color:#fff}
+.file-list{flex:1 1 auto;overflow:hidden}
+
+.soon-overlay{
+  position:absolute;left:11%;right:11%;bottom:54px;top:auto;z-index:6;text-align:center;
+  background:rgba(255,255,255,.95);color:#111;padding:22px 18px;border:1px solid rgba(0,0,0,.08);border-radius:14px;
+  font-size:18px;font-weight:900;box-shadow:0 12px 28px rgba(0,0,0,.12)
+}
+
+.bc-footer-info{
+  height:28px;display:grid;grid-template-columns:1fr 1fr;align-items:center;background:var(--footer);
+  border-top:1px solid var(--wline);font-size:10px;color:var(--wfg)
+}
+.bc-footer-info span{padding:0 10px;border-right:1px solid var(--wline);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bc-footer-info span:last-child{border-right:0}
+
+.bc-keys{
+  height:36px;display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:0 8px 8px;background:var(--footer);border-top:1px solid var(--wline)
+}
+.bc-keys div{height:26px;display:grid;place-items:center;background:#f6f6f6;border:1px solid #d0d0d0;font-size:10px;color:#111}
+.bc-card.dark .bc-keys div,.bc-card.green .bc-keys div{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);color:#fff}
+
+/* Mobile responsive: stack the hero, keep app cards usable and horizontal. */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:18px}
+  .deck{height:360px;margin-top:6px}
+  .bc-card{width:88%;height:290px}
+  .bc-card.light{left:0;top:62px}
+  .bc-card.dark{left:8%;top:26px}
+  .bc-card.green{left:16%;top:0}
+  .bc-menu{min-height:24px;gap:10px;padding:0 8px;font-size:8px}
+  .bc-toolbar{min-height:30px;padding:0 8px;gap:2px}
+  .tool{width:18px;height:18px;font-size:8px}
+  .sep{height:18px;margin:0 2px}
+  .bc-barline{min-height:20px;font-size:7px}
+  .path{height:18px;padding:0 6px;font-size:7px}
+  .file-head{min-height:20px;font-size:7px}
+  .file-row{min-height:16px;font-size:7px}
+  .bc-footer-info{height:18px;font-size:7px}
+  .bc-keys{height:22px;padding:0 4px 4px}
+  .bc-keys div{height:16px;font-size:6px}
+  .soon-overlay{left:8%;right:8%;bottom:28px;padding:10px 12px;font-size:14px;line-height:1.15}
+}
+
+@media(max-width:540px){
+  .deck{height:310px}
+  .bc-card{width:94%;height:250px}
+  .bc-card.light{left:0;top:54px}
+  .bc-card.dark{left:4%;top:24px}
+  .bc-card.green{left:8%;top:0}
+  .bc-menu{display:flex;gap:7px;font-size:7px}
+  .bc-toolbar{min-height:26px}
+  .tool:nth-child(n+13){display:none}
+  .bc-file-head,.file-head{font-size:6px}
+  .file-row{min-height:14px;font-size:6px}
+  .file-head span,.file-row span{padding:0 4px}
+  .soon-overlay{left:7%;right:7%;bottom:22px;font-size:12px;padding:8px 10px}
+}
+
+
+/* ==========================================================================\n   v12 — use the supplied perspective image directly + robust mobile layout\n   ========================================================================== */
+
+.deck{
+  position:relative;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-end;
+  height:auto;
+  min-height:430px;
+  overflow:visible;
+  perspective:none;
+}
+
+.hero-shot-wrap{
+  position:relative;
+  width:100%;
+  max-width:860px;
+  margin-left:auto;
+  aspect-ratio:1024 / 524;
+}
+
+.hero-shot{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  border-radius:12px;
+}
+
+.hero-shot-overlay{
+  position:absolute;
+  left:16%;
+  right:17%;
+  bottom:17%;
+  background:rgba(25,103,241,.94);
+  color:#fff;
+  text-align:center;
+  font-weight:900;
+  font-size:clamp(16px,1.35vw,30px);
+  line-height:1.15;
+  padding:18px 20px;
+  border-radius:14px;
+  box-shadow:0 14px 28px rgba(20,82,190,.26);
+}
+
+/* Prevent legacy generated mock overlay/cards from affecting the deck. */
+.deck .bc-card,
+.deck .soon-overlay{
+  display:none !important;
+}
+
+@media(max-width:1100px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .deck{
+    min-height:0;
+  }
+  .hero-shot-wrap{
+    max-width:900px;
+    width:100%;
+    margin:0 auto;
+  }
+}
+
+@media(max-width:700px){
+  .deck{
+    margin-top:6px;
+    min-height:0;
+  }
+  .hero-shot-wrap{
+    max-width:none;
+    width:100%;
+    aspect-ratio:auto;
+  }
+  .hero-shot{
+    height:auto;
+  }
+  .hero-shot-overlay{
+    left:12%;
+    right:12%;
+    bottom:14%;
+    font-size:clamp(12px,3.3vw,18px);
+    padding:10px 12px;
+    border-radius:10px;
+  }
+}
+
+@media(max-width:480px){
+  .hero-shot-overlay{
+    left:10%;
+    right:10%;
+    bottom:13%;
+    font-size:12px;
+    padding:8px 10px;
+    line-height:1.1;
+  }
+}
+
+
+/* ==========================================================================\n   v13 — larger hero reference image on desktop\n   ========================================================================== */
+
+@media(min-width:1101px){
+  .hero-grid{
+    grid-template-columns:minmax(500px,.72fr) minmax(980px,1.28fr);
+    gap:22px;
+  }
+  .deck{
+    min-height:470px;
+    align-items:flex-start;
+  }
+  .hero-shot-wrap{
+    max-width:980px;
+    width:110%;
+    margin-left:-8%;
+  }
+  .hero-shot-overlay{
+    left:15%;
+    right:16%;
+    bottom:17%;
+    font-size:clamp(18px,1.45vw,32px);
+    padding:18px 22px;
+  }
+}
+
+
+/* ==========================================================================\n   v14 — final hero layout based on the approved screenshot\n   ========================================================================== */
+
+/* Use the supplied perspective image as a background-based hero visual for a more stable layout. */
+.hero-shot{
+  background-image:url('hero-perspective-en.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+
+/* Desktop proportions tuned to the approved screenshot. */
+@media(min-width:1101px){
+  .hero-grid{
+    grid-template-columns:minmax(500px,.76fr) minmax(820px,1.24fr);
+    gap:18px;
+    align-items:start;
+  }
+  .deck{
+    min-height:420px;
+    margin-top:8px;
+    justify-content:flex-end;
+  }
+  .hero-shot-wrap{
+    width:100%;
+    max-width:760px;
+    margin:0 0 0 auto;
+    aspect-ratio:1024 / 524;
+  }
+  .hero-shot{
+    width:100%;
+    height:100%;
+    border-radius:12px;
+  }
+  .hero-shot-overlay{
+    left:18%;
+    right:14%;
+    bottom:17%;
+    font-size:clamp(15px,1.2vw,26px);
+    padding:16px 18px;
+    border-radius:12px;
+    background:rgba(25,103,241,.96);
+    color:#fff;
+  }
+}
+
+/* Tablet and mobile: keep the image fully visible and the blue CTA readable. */
+@media(max-width:1100px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .deck{
+    min-height:0;
+    height:auto;
+    margin-top:2px;
+  }
+  .hero-shot-wrap{
+    width:100%;
+    max-width:760px;
+    margin:0 auto;
+    aspect-ratio:1024 / 524;
+  }
+  .hero-shot{
+    width:100%;
+    height:100%;
+  }
+}
+
+@media(max-width:700px){
+  .hero-shot-wrap{
+    max-width:none;
+    width:100%;
+  }
+  .hero-shot-overlay{
+    left:11%;
+    right:11%;
+    bottom:15%;
+    font-size:clamp(12px,3.2vw,16px);
+    line-height:1.15;
+    padding:10px 12px;
+    border-radius:10px;
+    background:rgba(25,103,241,.96);
+    color:#fff;
+  }
+}
+
+@media(max-width:480px){
+  .deck{
+    margin-top:0;
+  }
+  .hero-shot-wrap{
+    aspect-ratio:1024 / 524;
+  }
+  .hero-shot-overlay{
+    left:9%;
+    right:9%;
+    bottom:14%;
+    font-size:12px;
+    padding:8px 10px;
+    line-height:1.1;
+  }
+}
+
+
+/* ==========================================================================\n   v15 — enlarge BC hero visual on desktop\n   ========================================================================== */
+@media(min-width:1101px){
+  .hero-grid{
+    grid-template-columns:minmax(460px,.68fr) minmax(940px,1.32fr);
+    gap:14px;
+  }
+  .deck{
+    min-height:500px;
+  }
+  .hero-shot-wrap{
+    max-width:980px;
+    width:122%;
+    margin-left:-16%;
+    margin-right:0;
+  }
+  .hero-shot-overlay{
+    left:17%;
+    right:13%;
+    bottom:17%;
+    font-size:clamp(17px,1.3vw,28px);
+    padding:18px 20px;
+  }
+}
+
+
+/* ==========================================================================\n   v16 — 200% desktop hero enlargement\n   ========================================================================== */
+@media(min-width:1101px){
+  .hero-grid{
+    grid-template-columns:minmax(400px,.56fr) minmax(1120px,1.44fr);
+    gap:10px;
+    align-items:start;
+  }
+  .deck{
+    min-height:640px;
+    justify-content:flex-end;
+  }
+  .hero-shot-wrap{
+    max-width:1320px;
+    width:168%;
+    margin-left:-52%;
+    margin-right:-2%;
+  }
+  .hero-shot{
+    background-size:contain;
+  }
+  .hero-shot-overlay{
+    left:18%;
+    right:12%;
+    bottom:17%;
+    font-size:clamp(20px,1.55vw,34px);
+    padding:20px 24px;
+    border-radius:14px;
+  }
+}
+
+
+/* ==========================================================================
+   v17 — new English static hero visual + 50px right shift + mobile repair
+   ========================================================================== */
+
+.hero-shot{
+  background-image:url('hero-perspective-en.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+
+/* The sign-up strip is already part of the new static hero visual. */
+.hero-shot-overlay{
+  display:none !important;
+}
+
+@media(min-width:1101px){
+  .hero-shot-wrap{
+    transform:translateX(50px);
+    aspect-ratio:970 / 510;
+  }
+  .hero-shot{
+    width:100%;
+    height:100%;
+    min-height:1px;
+  }
+}
+
+/* Tablet/mobile: force a real box for the background image so it can never collapse. */
+@media(max-width:1100px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+  .deck{
+    display:block;
+    width:100%;
+    height:auto;
+    min-height:0;
+    margin-top:10px;
+    overflow:visible;
+  }
+  .hero-shot-wrap{
+    position:relative;
+    display:block;
+    width:min(100%, 900px);
+    max-width:900px;
+    height:auto;
+    aspect-ratio:970 / 510;
+    margin:0 auto;
+    transform:none;
+  }
+  .hero-shot{
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:0;
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+  }
+}
+
+@media(max-width:700px){
+  .hero{
+    padding-top:26px;
+  }
+  .hero-grid{
+    gap:12px;
+  }
+  .deck{
+    margin-top:4px;
+  }
+  .hero-shot-wrap{
+    width:100%;
+    max-width:none;
+    aspect-ratio:970 / 510;
+  }
+  .hero-shot{
+    width:100%;
+    height:100%;
+  }
+}
+
+@media(max-width:480px){
+  .hero-shot-wrap{
+    width:100%;
+    aspect-ratio:970 / 510;
+  }
+}
+
+
+/* ==========================================================================\n   v18 — use the new approved perspective crop\n   ========================================================================== */
+.hero-shot{
+  background-image:url('hero-perspective-v2.png') !important;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+}
+
+/* Re-enable the blue beta strip as a live overlay above the static image. */
+.hero-shot-overlay{
+  display:block !important;
+  position:absolute;
+  left:18%;
+  right:18%;
+  bottom:13%;
+  background:rgba(25,103,241,.96);
+  color:#fff;
+  text-align:center;
+  font-weight:900;
+  font-size:clamp(16px,1.35vw,30px);
+  line-height:1.12;
+  padding:16px 18px;
+  border-radius:14px;
+  box-shadow:0 14px 28px rgba(20,82,190,.26);
+}
+
+@media(min-width:1101px){
+  .hero-shot-wrap{
+    transform:translateX(50px);
+    aspect-ratio:1030 / 565;
+  }
+}
+
+@media(max-width:1100px){
+  .hero-shot-wrap{
+    aspect-ratio:1030 / 565;
+  }
+  .hero-shot-overlay{
+    left:16%;
+    right:16%;
+    bottom:11%;
+    font-size:clamp(12px,2.6vw,18px);
+    padding:10px 12px;
+    border-radius:10px;
+  }
+}
+
+@media(max-width:700px){
+  .hero-shot-wrap{
+    aspect-ratio:1030 / 565;
+  }
+  .hero-shot-overlay{
+    left:13%;
+    right:13%;
+    bottom:10%;
+    font-size:12px;
+    padding:8px 10px;
+    border-radius:10px;
+  }
+}
+
+
+/* ==========================================================================\n   v19 — screenshot-matched platform row, plugin widget, and hero scaling\n   ========================================================================== */
+:root{
+  --hero-screen-scale:1;
+}
+
+/* Screen scaling built in for the hero visual. */
+@media(min-width:1700px){:root{--hero-screen-scale:1.06}}
+@media(min-width:1400px) and (max-width:1699px){:root{--hero-screen-scale:1.00}}
+@media(min-width:1101px) and (max-width:1399px){:root{--hero-screen-scale:.94}}
+
+.platforms-title{
+  margin-top:26px;
+  font-weight:900;
+  color:#4d50f7;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  font-size:15px;
+}
+
+.screenshot-platforms{
+  gap:28px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+
+.platform-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:18px;
+  font-weight:700;
+  color:#111827;
+}
+
+.platform-chip svg{
+  width:34px;
+  height:34px;
+  display:block;
+  flex:0 0 auto;
+}
+.platform-chip.windows{color:#2563eb}
+.platform-chip.macos{color:#0f172a}
+.platform-chip.linux{color:#111827}
+.platform-chip.android{color:#7dc71d}
+
+/* Hero preview uses 80% visual height and scales with screen width. */
+@media(min-width:1101px){
+  .deck{
+    min-height:620px;
+    overflow:visible;
+  }
+  .hero-shot-wrap{
+    width:clamp(860px, 74vw, 1280px);
+    max-width:none;
+    aspect-ratio:1030 / 565;
+    margin-left:calc(-1 * clamp(150px, 16vw, 360px));
+    margin-right:0;
+    transform:translateX(50px);
+  }
+  .hero-shot{
+    background-size:auto 80% !important;
+    background-position:center top !important;
+  }
+  .hero-shot-overlay{
+    left:15%;
+    right:15%;
+    bottom:11%;
+    font-size:clamp(20px, 1.55vw, 34px);
+    padding:18px 22px;
+  }
+}
+
+@media(max-width:1100px){
+  .hero-shot{
+    background-size:contain !important;
+    background-position:center center !important;
+  }
+  .platforms-title{
+    font-size:14px;
+  }
+  .platform-chip{
+    font-size:16px;
+  }
+  .platform-chip svg{
+    width:28px;
+    height:28px;
+  }
+}
+
+@media(max-width:700px){
+  .platforms-title{
+    margin-top:22px;
+    font-size:13px;
+  }
+  .screenshot-platforms{
+    gap:16px 20px;
+  }
+  .platform-chip{
+    font-size:15px;
+    gap:8px;
+  }
+  .platform-chip svg{
+    width:24px;
+    height:24px;
+  }
+}
+
+.plugin-widget{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:24px;
+  margin-top:34px;
+  padding:28px 32px;
+  border-radius:22px;
+  border:1px solid #d8dbff;
+  background:linear-gradient(90deg,#edf5ff 0%, #f8f3ff 100%);
+  box-shadow:0 16px 36px rgba(69,91,172,.08);
+}
+
+.plugin-widget-main{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  min-width:0;
+}
+
+.plugin-widget-icon{
+  width:70px;
+  height:70px;
+  border-radius:18px;
+  display:grid;
+  place-items:center;
+  color:#2660ef;
+  flex:0 0 auto;
+}
+.plugin-widget-icon svg{
+  width:42px;
+  height:42px;
+}
+.plugin-widget-copy h3{
+  margin:0 0 7px;
+  font-size:20px;
+  color:#215be3;
+}
+.plugin-widget-copy p{
+  margin:0;
+  color:#4a5870;
+  font-size:18px;
+  line-height:1.45;
+}
+.plugin-widget-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  flex:0 0 auto;
+  padding:16px 28px;
+  border-radius:16px;
+  border:2px solid #6f7eff;
+  color:#2455e6;
+  font-weight:900;
+  text-decoration:none;
+  background:rgba(255,255,255,.55);
+}
+.plugin-widget-btn svg{
+  width:22px;
+  height:22px;
+}
+.plugin-widget-btn:hover{
+  background:#ffffff;
+}
+
+@media(max-width:900px){
+  .plugin-widget{
+    flex-direction:column;
+    align-items:stretch;
+    padding:22px 20px;
+  }
+  .plugin-widget-main{
+    align-items:flex-start;
+  }
+  .plugin-widget-copy h3{
+    font-size:18px;
+  }
+  .plugin-widget-copy p{
+    font-size:15px;
+  }
+  .plugin-widget-btn{
+    justify-content:center;
+    width:100%;
+  }
+}
+
+
+/* ==========================================================================\n   v20 — restore platform status badges, strengthen plugin widget, improve hi-res scaling\n   ========================================================================== */
+.screenshot-platforms{
+  gap:30px;
+  overflow:visible;
+}
+.platform-chip{
+  position:relative;
+  padding:10px 22px 10px 0;
+}
+.status-badge{
+  position:absolute;
+  top:-12px;
+  right:-8px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:58px;
+  padding:4px 8px;
+  border-radius:999px;
+  font-size:11px;
+  line-height:1;
+  font-weight:900;
+  text-transform:uppercase;
+  color:#fff;
+  letter-spacing:.03em;
+  box-shadow:0 10px 22px rgba(16,24,40,.18);
+}
+.status-badge.coming{
+  background:#eb3c3c;
+  transform:rotate(-15deg);
+}
+.status-badge.active{
+  background:#17964b;
+  transform:rotate(-12deg);
+}
+
+.plugin-widget{
+  background:linear-gradient(92deg,#dfeaff 0%,#ece4ff 52%,#e1d7ff 100%);
+  border:1px solid #b9c7ff;
+  box-shadow:0 18px 46px rgba(66,96,201,.16), inset 0 1px 0 rgba(255,255,255,.75);
+}
+.plugin-widget-btn{
+  background:#ffffff;
+  box-shadow:0 10px 26px rgba(77,91,193,.10);
+}
+
+/* Improve scaling on high resolution displays. */
+.wrap{
+  width:min(100% - 40px, 1600px);
+}
+@media(min-width:1800px){
+  .wrap{width:min(100% - 70px, 1840px)}
+  body{font-size:17px}
+  .navbar{padding-top:16px;padding-bottom:16px}
+  h1{font-size:clamp(92px,5.6vw,126px)}
+  .lead{font-size:clamp(24px,1.8vw,34px)}
+  .copy{font-size:21px;line-height:1.55;max-width:720px}
+  .actions .btn{font-size:18px;padding:17px 26px}
+  .micro-card{padding:22px 22px}
+  .platforms-title{font-size:18px}
+  .platform-chip{font-size:21px;gap:12px}
+  .platform-chip svg{width:38px;height:38px}
+  .hero-shot-wrap{width:clamp(980px,76vw,1420px);margin-left:calc(-1 * clamp(170px,18vw,420px));transform:translateX(70px)}
+  .deck{min-height:700px}
+  .home-feature-grid{gap:18px}
+  .home-card{min-height:150px;padding:26px 28px}
+  .home-card h3{font-size:24px}
+  .home-card p{font-size:17px;line-height:1.55}
+  .plugin-widget{padding:32px 36px}
+  .plugin-widget-copy h3{font-size:28px}
+  .plugin-widget-copy p{font-size:18px}
+  .plugin-widget-btn{font-size:18px;padding:18px 30px}
+}
+@media(min-width:2400px){
+  .wrap{width:min(100% - 90px, 2140px)}
+  body{font-size:18px}
+  h1{font-size:clamp(108px,5.4vw,144px)}
+  .copy{font-size:23px;max-width:780px}
+  .hero-shot-wrap{width:clamp(1200px,78vw,1680px);margin-left:calc(-1 * clamp(220px,21vw,520px));transform:translateX(84px)}
+  .deck{min-height:820px}
+  .platform-chip{font-size:23px}
+  .home-card{min-height:164px;padding:28px 30px}
+  .home-card h3{font-size:26px}
+  .home-card p{font-size:18px}
+  .plugin-widget{padding:36px 40px}
+  .plugin-widget-copy h3{font-size:30px}
+  .plugin-widget-copy p{font-size:19px}
+}
+@media(max-width:700px){
+  .status-badge{top:-10px;right:-6px;min-width:50px;font-size:10px;padding:4px 7px}
+  .plugin-widget{background:linear-gradient(96deg,#e6efff 0%,#f1ebff 100%)}
+}
+
+
+/* ==========================================================================\n   v21 — fix left hero column scaling / vertical fill\n   ========================================================================== */
+@media(min-width:1101px){
+  .hero-grid{
+    align-items:stretch !important;
+  }
+  .hero-grid > div:first-child{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    min-height:620px;
+    padding-right:8px;
+  }
+  .hero-grid > div:first-child .copy{
+    max-width:670px;
+  }
+  .hero-grid > div:first-child .actions{
+    margin-top:28px;
+  }
+  .hero-grid > div:first-child .micro-row{
+    margin-top:4px;
+  }
+  .hero-grid > div:first-child .platforms-title{
+    margin-top:auto;
+    padding-top:28px;
+  }
+}
+
+@media(min-width:1800px){
+  .hero-grid > div:first-child{
+    min-height:700px;
+    padding-right:16px;
+  }
+  .hero-grid > div:first-child .platforms-title{
+    padding-top:34px;
+  }
+}
+
+@media(min-width:2400px){
+  .hero-grid > div:first-child{
+    min-height:820px;
+    padding-right:18px;
+  }
+  .hero-grid > div:first-child .platforms-title{
+    padding-top:40px;
+  }
+}
+
+
+/* ==========================================================================\n   v22 — scale the whole left hero block, remove price card, English hero image\n   ========================================================================== */
+
+/* Replace the previous Hungarian-labelled hero art with an all-English asset. */
+.hero-shot{
+  background-image:url('hero-perspective-en-v2.png') !important;
+}
+
+/* Undo the v21 platform-only vertical anchoring. */
+@media(min-width:1101px){
+  .hero-grid{
+    align-items:start !important;
+  }
+  .hero-left{
+    min-height:0 !important;
+    padding-right:10px;
+    transform-origin:top left;
+  }
+  .hero-left .platforms-title{
+    margin-top:28px !important;
+    padding-top:0 !important;
+  }
+}
+
+/* Scale the ENTIRE left hero column on larger screens, not just the platform row. */
+@media(min-width:1400px) and (max-width:1699px){
+  .hero-left{zoom:1.10;}
+}
+@media(min-width:1700px) and (max-width:2199px){
+  .hero-left{zoom:1.18;}
+}
+@media(min-width:2200px){
+  .hero-left{zoom:1.28;}
+}
+
+/* Make the remaining Free download widget occupy both former card slots. */
+.micro-row.single-download{
+  display:block !important;
+  width:100%;
+  max-width:620px !important;
+}
+.free-download-wide{
+  width:100%;
+  min-width:0 !important;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+.free-download-wide > div{
+  flex:1 1 auto;
+}
+
+/* Keep scaling sane once the layout stacks. */
+@media(max-width:1100px){
+  .hero-left{zoom:1 !important;}
+  .micro-row.single-download{max-width:none !important;}
+}
+
+/* High-resolution page scaling starts earlier and remains progressive. */
+@media(min-width:1400px){
+  .wrap{width:min(100% - 48px, 1680px)}
+}
+@media(min-width:1800px){
+  .wrap{width:min(100% - 64px, 1900px)}
+}
+@media(min-width:2400px){
+  .wrap{width:min(100% - 80px, 2200px)}
+}
+
+
+/* ==========================================================================\n   v23 — undo over-scaling; keep actions inline; remove hero dead space\n   ========================================================================== */
+
+/* v22 zoom was the source of the oversized left column and button wrapping. */
+@media(min-width:1101px){
+  .hero-left{
+    zoom:1 !important;
+    transform:none !important;
+    min-height:0 !important;
+    padding-right:18px;
+  }
+  .hero-left .actions{
+    display:flex;
+    flex-wrap:nowrap !important;
+    align-items:center;
+    gap:14px;
+    width:100%;
+  }
+  .hero-left .actions .btn{
+    flex:0 0 auto;
+    white-space:nowrap;
+  }
+  .micro-row.single-download{
+    width:100%;
+    max-width:none !important;
+  }
+  .free-download-wide{
+    width:100%;
+    max-width:none;
+  }
+  .hero-left .platforms-title{
+    margin-top:26px !important;
+    padding-top:0 !important;
+  }
+
+  /* Keep the hero grid balanced without forcing a huge vertical track. */
+  .hero-grid{
+    align-items:start !important;
+  }
+  .deck{
+    min-height:500px !important;
+    height:auto !important;
+    margin-bottom:0 !important;
+  }
+  .hero{
+    padding-bottom:10px !important;
+  }
+  .hero + .section{
+    padding-top:12px !important;
+  }
+}
+
+/* Moderate high-resolution scaling: enlarge gradually, not by zooming one column. */
+@media(min-width:1800px){
+  body{font-size:16px !important}
+  .wrap{width:min(100% - 64px, 1840px) !important}
+  .hero h1{font-size:clamp(74px,4.5vw,96px) !important}
+  .hero .lead{font-size:clamp(22px,1.45vw,28px) !important}
+  .hero .copy{font-size:18px !important;line-height:1.55 !important;max-width:650px !important}
+  .actions .btn{font-size:16px !important;padding:14px 20px !important}
+  .micro-card{padding:16px 18px !important}
+  .platforms-title{font-size:16px !important}
+  .platform-chip{font-size:18px !important;gap:10px !important}
+  .platform-chip svg{width:32px !important;height:32px !important}
+  .deck{min-height:535px !important}
+  .home-card{min-height:138px !important;padding:22px 24px !important}
+  .home-card h3{font-size:19px !important}
+  .home-card p{font-size:15px !important}
+  .plugin-widget{padding:28px 32px !important}
+  .plugin-widget-copy h3{font-size:22px !important}
+  .plugin-widget-copy p{font-size:16px !important}
+  .plugin-widget-btn{font-size:16px !important;padding:16px 26px !important}
+}
+
+@media(min-width:2400px){
+  .wrap{width:min(100% - 80px, 2100px) !important}
+  .hero h1{font-size:clamp(82px,4.2vw,108px) !important}
+  .hero .copy{font-size:19px !important;max-width:700px !important}
+  .deck{min-height:585px !important}
+}
+
+/* Tablet/mobile: allow the CTA buttons to wrap only where necessary. */
+@media(max-width:1100px){
+  .hero-left .actions{flex-wrap:wrap !important}
+  .hero-left .actions .btn{white-space:normal}
+  .deck{min-height:0 !important;height:auto !important}
+  .hero + .section{padding-top:10px !important}
+}
+
+
+/* ==========================================================================\n   v24 — height-aware desktop scaling + restored dark footer\n   ========================================================================== */
+
+/*
+ * Large-screen scaling is now constrained by viewport HEIGHT as well as width.
+ * This prevents 1440p/4K screens from inflating the whole page simply because
+ * they are very wide.
+ */
+@media(min-width:1101px){
+  .wrap{
+    width:min(calc(100% - 48px), 1900px, 138vh) !important;
+  }
+
+  .hero-grid{
+    grid-template-columns:minmax(470px,.72fr) minmax(720px,1.28fr) !important;
+    gap:22px !important;
+    align-items:start !important;
+  }
+
+  .hero h1{
+    font-size:clamp(62px,7.2vh,84px) !important;
+  }
+  .hero .lead{
+    font-size:clamp(20px,2.25vh,26px) !important;
+  }
+  .hero .copy{
+    font-size:clamp(16px,1.65vh,18px) !important;
+    line-height:1.55 !important;
+    max-width:650px !important;
+  }
+  .actions .btn{
+    font-size:16px !important;
+    padding:14px 20px !important;
+  }
+
+  .hero-left,
+  .hero-grid > div:first-child{
+    min-height:0 !important;
+  }
+  .hero-grid > div:first-child .platforms-title{
+    margin-top:26px !important;
+    padding-top:0 !important;
+  }
+
+  .deck{
+    min-height:clamp(450px,52vh,560px) !important;
+    height:auto !important;
+  }
+  .hero-shot-wrap{
+    width:min(78vw,160vh,1500px) !important;
+    max-width:none !important;
+    margin-left:calc(-1 * min(16vw,280px)) !important;
+    transform:translateX(50px) !important;
+  }
+
+  .home-card{
+    min-height:136px !important;
+    padding:22px 24px !important;
+  }
+  .home-card h3{
+    font-size:19px !important;
+  }
+  .home-card p{
+    font-size:15px !important;
+  }
+  .plugin-widget{
+    padding:28px 32px !important;
+  }
+  .plugin-widget-copy h3{
+    font-size:22px !important;
+  }
+  .plugin-widget-copy p{
+    font-size:16px !important;
+  }
+}
+
+/* Override previous width-only 1800/2400 enlargement rules. */
+@media(min-width:1800px){
+  body{font-size:16px !important}
+  .platforms-title{font-size:16px !important}
+  .platform-chip{font-size:18px !important;gap:10px !important}
+  .platform-chip svg{width:32px !important;height:32px !important}
+}
+
+@media(min-width:2400px){
+  body{font-size:16px !important}
+  .hero h1{font-size:clamp(64px,7vh,86px) !important}
+  .hero .copy{font-size:18px !important;max-width:670px !important}
+  .deck{min-height:clamp(470px,52vh,580px) !important}
+}
+
+/* Restore and harden the original dark footer. */
+#foot{
+  display:block !important;
+  width:100% !important;
+}
+.footer{
+  display:block !important;
+  width:100% !important;
+  margin-top:40px !important;
+  padding:30px 0 !important;
+  background:#081426 !important;
+  color:#b9c8dc !important;
+  border-top:1px solid rgba(255,255,255,.04);
+}
+.footer strong{
+  color:#fff !important;
+}
+
+@media(max-width:700px){
+  .footer{
+    margin-top:28px !important;
+    padding:24px 0 !important;
+  }
+}
