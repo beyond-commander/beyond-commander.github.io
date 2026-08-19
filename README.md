@@ -1,6 +1,9 @@
 # Beyond Commander website
+The application is available https://github.com/beyond-commander/beyondcmd
 
 Static GitHub Pages site for `https://beyond-commander.github.io/`.
+
+
 
 ## Included pages
 - `index.html` — Home
