@@ -90,8 +90,48 @@ Object.assign(I.de,{
   contactEmail:'E-Mail'
 });
 
+Object.assign(I.en,{
+  gallery:'Gallery',
+  galleryTitle:'Screenshots',
+  galleryLead:'Beyond Commander on the platforms currently represented in the project screenshot archive.',
+  galleryLinux:'Linux',
+  galleryAndroid:'Android',
+  galleryWindows:'Windows',
+  galleryMac:'macOS',
+  galleryNoMac:'No macOS screenshots are available in the project repository yet.',
+  galleryOpen:'Open screenshot',
+  galleryClose:'Close',
+  gallerySource:'Screenshots are mirrored from the official Beyond Commander GitHub repository.'
+});
+Object.assign(I.hu,{
+  gallery:'Galéria',
+  galleryTitle:'Képernyőképek',
+  galleryLead:'A Beyond Commander aktuális képernyőképei platformonként rendezve.',
+  galleryLinux:'Linux',
+  galleryAndroid:'Android',
+  galleryWindows:'Windows',
+  galleryMac:'macOS',
+  galleryNoMac:'A projekt GitHub-tárában jelenleg még nincs macOS képernyőkép.',
+  galleryOpen:'Képernyőkép megnyitása',
+  galleryClose:'Bezárás',
+  gallerySource:'A képernyőképek a Beyond Commander hivatalos GitHub-tárából kerültek a weboldalba.'
+});
+Object.assign(I.de,{
+  gallery:'Galerie',
+  galleryTitle:'Screenshots',
+  galleryLead:'Aktuelle Beyond-Commander-Screenshots, nach Plattform geordnet.',
+  galleryLinux:'Linux',
+  galleryAndroid:'Android',
+  galleryWindows:'Windows',
+  galleryMac:'macOS',
+  galleryNoMac:'Im Projekt-Repository sind derzeit noch keine macOS-Screenshots verfügbar.',
+  galleryOpen:'Screenshot öffnen',
+  galleryClose:'Schließen',
+  gallerySource:'Die Screenshots wurden aus dem offiziellen Beyond-Commander-GitHub-Repository in die Website übernommen.'
+});
+
 let lang=localStorage.getItem('bc-lang')||'en'; function t(k){return I[lang]?.[k]||I.en[k]||k} function setLang(x){lang=I[x]?x:'en';localStorage.setItem('bc-lang',lang);render();closeLang()} function closeLang(){document.querySelector('.lang-menu')?.classList.remove('open')}
-function nav(active){return `<header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img class="brand-logo" src="assets/bc2.svg" alt="Beyond Commander"><span><strong>BEYOND COMMANDER</strong><small data-i18n="tagline"></small></span></a><nav class="navlinks"><a href="index.html" class="${active==='home'?'active':''}" data-i18n="home"></a><a href="features.html" class="${active==='features'?'active':''}" data-i18n="features"></a><a href="plugins.html" class="${active==='plugins'?'active':''}" data-i18n="plugins"></a><a href="license.html" class="${active==='license'?'active':''}" data-i18n="license"></a><a href="support.html" class="${active==='support'?'active':''}" data-i18n="support"></a><a href="about.html" class="${active==='about'?'active':''}" data-i18n="about"></a></nav><div class="lang"><button data-lang-label></button><div class="lang-menu"><button onclick="setLang('en')">English</button><button onclick="setLang('hu')">Magyar</button><button onclick="setLang('de')">Deutsch</button></div></div></div></header>`}
+function nav(active){return `<header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img class="brand-logo" src="assets/bc2.svg" alt="Beyond Commander"><span><strong>BEYOND COMMANDER</strong><small data-i18n="tagline"></small></span></a><nav class="navlinks"><a href="index.html" class="${active==='home'?'active':''}" data-i18n="home"></a><a href="features.html" class="${active==='features'?'active':''}" data-i18n="features"></a><a href="gallery.html" class="${active==='gallery'?'active':''}" data-i18n="gallery"></a><a href="plugins.html" class="${active==='plugins'?'active':''}" data-i18n="plugins"></a><a href="license.html" class="${active==='license'?'active':''}" data-i18n="license"></a><a href="support.html" class="${active==='support'?'active':''}" data-i18n="support"></a><a href="about.html" class="${active==='about'?'active':''}" data-i18n="about"></a></nav><div class="lang"><button data-lang-label></button><div class="lang-menu"><button onclick="setLang('en')">English</button><button onclick="setLang('hu')">Magyar</button><button onclick="setLang('de')">Deutsch</button></div></div></div></header>`}
 function footer(){return `<footer class="footer"><div class="wrap"><strong>Beyond Commander</strong><div>File management beyond the classic Commander model.</div></div></footer>`}
 const L=[
 ['📁 [..]','','','',''],
