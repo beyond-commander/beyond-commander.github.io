@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-       <loc>https://beyond-commander.github.io/</loc>
-       <lastmod>2026-08-22T05:36:26+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
+    <loc>https://beyond-commander.github.io/</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
-       <loc>https://beyond-commander.github.io/features.html</loc>
-       <lastmod>2026-08-22T05:36:26+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://beyond-commander.github.io/features.html</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
-       <loc>https://beyond-commander.github.io/license.html</loc>
-       <lastmod>2026-08-22T05:36:26+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://beyond-commander.github.io/license.html</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
-       <loc>https://beyond-commander.github.io/plugins.html</loc>
-       <lastmod>2026-08-22T05:36:26+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://beyond-commander.github.io/plugins.html</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
-       <loc>https://beyond-commander.github.io/support.html</loc>
-       <lastmod>2026-08-22T15:06:00+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://beyond-commander.github.io/support.html</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
-       <loc>https://beyond-commander.github.io/about.html</loc>
-       <lastmod>2026-08-22T15:06:00+00:00</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.7000</priority>
+    <loc>https://beyond-commander.github.io/about.html</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
   <url>
-       <loc>https://beyond-commander.github.io/gallery.html</loc>
-       <lastmod>2026-08-23T16:30:00+00:00</lastmod>
-       <changefreq>weekly</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://beyond-commander.github.io/gallery.html</loc>
+    <lastmod>2026-08-23</lastmod>
   </url>
 </urlset>
