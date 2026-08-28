@@ -127,6 +127,45 @@ def assert_pro_page() -> None:
     assert canonical and canonical.get('href') == BASE + 'pro.html', 'pro canonical incorrect'
 
 
+
+def assert_platform_statuses() -> None:
+    """Only macOS may be marked Coming; Windows/Linux/Android must be Active."""
+    checked = 0
+    for name in PAGES:
+        s = soup_for(name)
+        # Legacy footer/status rows.
+        for el in s.select('.platform.future, .platform.active'):
+            text = ' '.join(el.stripped_strings)
+            platform = next((p for p in ('Windows', 'macOS', 'Linux', 'Android') if p in text), None)
+            if not platform:
+                continue
+            checked += 1
+            classes = set(el.get('class', []))
+            if platform == 'macOS':
+                assert 'future' in classes, f'{name}: macOS must be Coming in footer/status row'
+                assert 'Coming!' in text, f'{name}: macOS missing Coming! label'
+            else:
+                assert 'active' in classes, f'{name}: {platform} must be Active in footer/status row'
+                assert 'Coming!' not in text, f'{name}: {platform} incorrectly marked Coming!'
+                assert 'Active!' in text, f'{name}: {platform} missing green Active! status label'
+
+        # Main page chip-style status row.
+        for el in s.select('.platform-chip'):
+            text = ' '.join(el.stripped_strings)
+            platform = next((p for p in ('Windows', 'macOS', 'Linux', 'Android') if p in text), None)
+            if not platform:
+                continue
+            checked += 1
+            classes = set(el.get('class', []))
+            if platform == 'macOS':
+                assert 'is-coming' in classes, f'{name}: macOS chip must be Coming'
+                assert 'Coming!' in text, f'{name}: macOS chip missing Coming! label'
+            else:
+                assert ('active' in classes or 'is-active' in classes), f'{name}: {platform} chip must be Active'
+                assert 'Coming!' not in text, f'{name}: {platform} chip incorrectly marked Coming!'
+                assert 'Active!' in text, f'{name}: {platform} chip missing Active! status label'
+    assert checked >= 4, 'no platform status components found'
+
 def assert_i18n_keys_complete() -> None:
     js = (ROOT / 'assets/site.js').read_text(encoding='utf-8')
     html_keys = set()
@@ -178,6 +217,7 @@ def main() -> int:
     checks += [
         ('index CTA', assert_index_cta),
         ('pro page', assert_pro_page),
+        ('platform statuses', assert_platform_statuses),
         ('sitemap', assert_sitemap),
         ('static nav preserved', assert_static_nav_not_replaced),
         ('internal links', assert_internal_links_exist),
