@@ -130,8 +130,93 @@ Object.assign(I.de,{
   gallerySource:'Die Screenshots wurden aus dem offiziellen Beyond-Commander-GitHub-Repository in die Website übernommen.'
 });
 
+// Pro edition, GitHub CTA and SEO-safe text fallbacks.
+Object.assign(I.en,{
+  "pro": "Pro",
+  "githubVisit": "Visit GitHub releases",
+  "freeSub": "Public and beta builds are available on GitHub Releases.",
+  "proEyebrow": "Android Pro edition",
+  "proTitle": "Beyond Commander Pro for Android",
+  "proLead": "A planned premium Android edition for power users who need deeper inspection, administration and endpoint-security tools directly inside the file manager.",
+  "proStatus": "Planned / coming",
+  "proFeaturesTitle": "Pro tools for Android power users",
+  "proFeaturesLead": "The Pro roadmap extends the Android edition with integrated low-level tools while keeping the familiar Commander workflow.",
+  "proHex": "Hex editor",
+  "proHexD": "Inspect and edit files at byte level with offsets, hexadecimal values and text representation in one focused view.",
+  "proConsole": "Console",
+  "proConsoleD": "Open an integrated command console for advanced file-system and administration workflows without leaving Beyond Commander.",
+  "proVirus": "Virus scan",
+  "proVirusD": "Run on-demand file and folder malware checks from the Android file-management workflow, with clear scan status and results.",
+  "proOps": "Advanced operations",
+  "proOpsD": "Extended batch, queue and power-user operations designed for larger or more complex file-management jobs.",
+  "proSentinel": "Sentinel Endpoint",
+  "proSentinelD": "Planned integration with Sentinel Endpoint for device-security status, protection telemetry and security-oriented actions.",
+  "proRoadmapTitle": "Built on Beyond Commander Android",
+  "proRoadmapD": "Pro is a planned extension of the Android edition. The standard Android experience remains the foundation; Pro adds the advanced tools above as they become ready.",
+  "proFollow": "Follow Pro releases on GitHub"
+});
+Object.assign(I.hu,{
+  "pro": "Pro",
+  "githubVisit": "Nézd be a Githubra",
+  "freeSub": "A publikus és béta kiadások a GitHub Releases oldalon érhetők el.",
+  "proEyebrow": "Android Pro kiadás",
+  "proTitle": "Beyond Commander Pro Androidra",
+  "proLead": "Tervezett prémium Android-kiadás azoknak a haladó felhasználóknak, akik mélyebb vizsgálati, adminisztrációs és végpontvédelmi eszközöket szeretnének közvetlenül a fájlkezelőben.",
+  "proStatus": "Tervezett / hamarosan",
+  "proFeaturesTitle": "Pro eszközök haladó Android-felhasználóknak",
+  "proFeaturesLead": "A Pro fejlesztési irány az Android-változatot alacsony szintű, integrált eszközökkel bővíti, a megszokott Commander-munkafolyamat megtartásával.",
+  "proHex": "Hexa editor",
+  "proHexD": "Fájlok bájtszintű vizsgálata és szerkesztése offsetekkel, hexadecimális értékekkel és szöveges megjelenítéssel egyetlen nézetben.",
+  "proConsole": "Konzol",
+  "proConsoleD": "Integrált parancskonzol haladó fájlrendszer- és adminisztrációs műveletekhez a Beyond Commander elhagyása nélkül.",
+  "proVirus": "Víruskeresés",
+  "proVirusD": "Igény szerinti fájl- és mappavizsgálat kártevők után az Android fájlkezelési munkafolyamatából, egyértelmű állapottal és eredményekkel.",
+  "proOps": "Fejlett műveletek",
+  "proOpsD": "Kiterjesztett kötegelt, sorba állított és haladó műveletek nagyobb vagy összetettebb fájlkezelési feladatokhoz.",
+  "proSentinel": "Sentinel Endpoint",
+  "proSentinelD": "Tervezett Sentinel Endpoint integráció eszközbiztonsági állapothoz, védelmi telemetriához és biztonsági műveletekhez.",
+  "proRoadmapTitle": "A Beyond Commander Androidra épül",
+  "proRoadmapD": "A Pro az Android-változat tervezett bővítése. A normál Android-élmény marad az alap, a Pro pedig fokozatosan hozzáadja a fenti haladó eszközöket.",
+  "proFollow": "Pro kiadások követése a GitHubon"
+});
+Object.assign(I.de,{
+  active:'Aktiv',
+  android:'Android',
+  linuxShort:'Linux',
+  macos:'macOS',
+  platformsFancy:'Multi-Plattform-Unterstützung',
+  pluginWidgetTitle:'Plugins & WCL-Module',
+  pluginWidgetCopy:'Erweitern Sie Beyond Commander mit zusätzlichen Community-Plugin-Funktionen.',
+  pluginWidgetButton:'Plugins herunterladen',
+  windows:'Windows'
+});
+Object.assign(I.de,{
+  "pro": "Pro",
+  "githubVisit": "GitHub-Releases ansehen",
+  "freeSub": "Öffentliche und Beta-Builds sind über GitHub Releases verfügbar.",
+  "proEyebrow": "Android-Pro-Edition",
+  "proTitle": "Beyond Commander Pro für Android",
+  "proLead": "Eine geplante Premium-Android-Edition für Power-User, die tiefere Analyse-, Administrations- und Endpoint-Security-Werkzeuge direkt im Dateimanager benötigen.",
+  "proStatus": "Geplant / demnächst",
+  "proFeaturesTitle": "Pro-Werkzeuge für Android-Power-User",
+  "proFeaturesLead": "Die Pro-Roadmap erweitert die Android-Edition um integrierte Low-Level-Werkzeuge und behält den vertrauten Commander-Workflow bei.",
+  "proHex": "Hex-Editor",
+  "proHexD": "Dateien auf Byte-Ebene mit Offsets, Hexadezimalwerten und Textdarstellung in einer fokussierten Ansicht untersuchen und bearbeiten.",
+  "proConsole": "Konsole",
+  "proConsoleD": "Eine integrierte Befehlskonsole für fortgeschrittene Dateisystem- und Administrationsabläufe, ohne Beyond Commander zu verlassen.",
+  "proVirus": "Virenscan",
+  "proVirusD": "Dateien und Ordner bei Bedarf direkt aus dem Android-Dateimanager auf Schadsoftware prüfen, mit klarer Status- und Ergebnisanzeige.",
+  "proOps": "Erweiterte Operationen",
+  "proOpsD": "Erweiterte Stapel-, Warteschlangen- und Power-User-Operationen für größere oder komplexere Dateiverwaltungsaufgaben.",
+  "proSentinel": "Sentinel Endpoint",
+  "proSentinelD": "Geplante Sentinel-Endpoint-Integration für Gerätesicherheitsstatus, Schutztelemetrie und sicherheitsbezogene Aktionen.",
+  "proRoadmapTitle": "Auf Beyond Commander Android aufgebaut",
+  "proRoadmapD": "Pro ist als Erweiterung der Android-Edition geplant. Die Standard-Android-Erfahrung bleibt die Basis; Pro ergänzt die oben genannten Profiwerkzeuge schrittweise.",
+  "proFollow": "Pro-Releases auf GitHub verfolgen"
+});
+
 let lang=localStorage.getItem('bc-lang')||'en'; function t(k){return I[lang]?.[k]||I.en[k]||k} function setLang(x){lang=I[x]?x:'en';localStorage.setItem('bc-lang',lang);render();closeLang()} function closeLang(){document.querySelector('.lang-menu')?.classList.remove('open')}
-function nav(active){return `<header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img class="brand-logo" src="assets/bc2.svg" alt="Beyond Commander"><span><strong>BEYOND COMMANDER</strong><small data-i18n="tagline"></small></span></a><nav class="navlinks"><a href="index.html" class="${active==='home'?'active':''}" data-i18n="home"></a><a href="features.html" class="${active==='features'?'active':''}" data-i18n="features"></a><a href="gallery.html" class="${active==='gallery'?'active':''}" data-i18n="gallery"></a><a href="plugins.html" class="${active==='plugins'?'active':''}" data-i18n="plugins"></a><a href="license.html" class="${active==='license'?'active':''}" data-i18n="license"></a><a href="support.html" class="${active==='support'?'active':''}" data-i18n="support"></a><a href="about.html" class="${active==='about'?'active':''}" data-i18n="about"></a></nav><div class="lang"><button data-lang-label></button><div class="lang-menu"><button onclick="setLang('en')">English</button><button onclick="setLang('hu')">Magyar</button><button onclick="setLang('de')">Deutsch</button></div></div></div></header>`}
+function nav(active){return `<header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img class="brand-logo" src="assets/bc2.svg" alt="Beyond Commander"><span><strong>BEYOND COMMANDER</strong><small data-i18n="tagline"></small></span></a><nav class="navlinks"><a href="index.html" class="${active==='home'?'active':''}" data-i18n="home"></a><a href="features.html" class="${active==='features'?'active':''}" data-i18n="features"></a><a href="gallery.html" class="${active==='gallery'?'active':''}" data-i18n="gallery"></a><a href="plugins.html" class="${active==='plugins'?'active':''}" data-i18n="plugins"></a><a href="pro.html" class="${active==='pro'?'active':''}" data-i18n="pro"></a><a href="license.html" class="${active==='license'?'active':''}" data-i18n="license"></a><a href="support.html" class="${active==='support'?'active':''}" data-i18n="support"></a><a href="about.html" class="${active==='about'?'active':''}" data-i18n="about"></a></nav><div class="lang"><button data-lang-label></button><div class="lang-menu"><button onclick="setLang('en')">English</button><button onclick="setLang('hu')">Magyar</button><button onclick="setLang('de')">Deutsch</button></div></div></div></header>`}
 function footer(){return `<footer class="footer"><div class="wrap"><strong>Beyond Commander</strong><div>File management beyond the classic Commander model.</div></div></footer>`}
 const L=[
 ['📁 [..]','','','',''],
