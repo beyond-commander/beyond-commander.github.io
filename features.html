@@ -29,14 +29,14 @@
   <meta name="twitter:image:alt" content="Beyond Commander dual-pane file manager"/>
 </head>
 <body>
-<div id="nav"><header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img alt="Beyond Commander" class="brand-logo" src="assets/bc2.svg"/><span><strong>BEYOND COMMANDER</strong><small data-i18n="tagline">Beyond file management</small></span></a><nav aria-label="Primary navigation" class="navlinks"><a class="" data-i18n="home" href="index.html">Home</a><a class="active" data-i18n="features" href="features.html">Features</a><a class="" data-i18n="gallery" href="gallery.html">Gallery</a><a class="" data-i18n="plugins" href="plugins.html">Plugins</a><a class="" data-i18n="pro" href="pro.html">Pro</a><a class="" data-i18n="license" href="license.html">License</a><a class="" data-i18n="support" href="support.html">Contact</a><a class="" data-i18n="about" href="about.html">About</a></nav><div class="lang"><button aria-label="Language" data-lang-label="">English ▾</button><div class="lang-menu"><button onclick="setLang('en')">English</button><button onclick="setLang('hu')">Magyar</button><button onclick="setLang('de')">Deutsch</button></div></div></div></header></div>
+<div id="nav"></div>
 <main>
   <section class="page-hero features-hero">
     <div class="wrap features-hero-grid">
       <div>
         <h1 data-i18n="featuresTitle">Features</h1>
         <p class="lead gradient" data-i18n="hero2">Much more than a Total Commander alternative!</p>
-        <p class="copy features-lead">Beyond Commander combines the familiar Commander workflow with modern tools for browsing, searching, comparing, synchronizing and managing files across Linux, Windows and Android.</p>
+        <p class="copy features-lead">Beyond Commander combines the familiar Commander workflow with modern tools for browsing, searching, comparing, synchronizing and managing files across Linux, Windows, macOS and Android.</p>
         <div class="actions feature-actions">
           <a class="btn primary" href="https://github.com/beyond-commander/beyondcmd/releases" rel="noopener" target="_blank">See GitHub Releases</a>
           <a class="btn" href="gallery.html">View Gallery</a>
@@ -44,8 +44,8 @@
         <div class="feature-pill-row">
           <span class="feature-pill">Dual-pane + optional 3-panel workflow</span>
           <span class="feature-pill">Queue-based background operations</span>
-          <span class="feature-pill">Archive browsing & compression</span>
-          <span class="feature-pill">Native Linux, Windows and Android editions</span>
+          <span class="feature-pill">Archive browsing &amp; compression</span>
+          <span class="feature-pill">Native Linux, Windows, macOS and Android editions</span>
         </div>
       </div>
       <div class="hero-image-card">
@@ -169,7 +169,7 @@
             <li>Custom button bars, drive bars and view settings</li>
             <li>Configurable icons, fonts, thumbnails and zoom</li>
             <li>Built-in help and multi-language interface</li>
-            <li>Native Linux desktop, native Windows and separate Android editions</li>
+            <li>Native Linux desktop, native Windows, macOS and separate Android editions</li>
           </ul>
         </article>
       </div>
@@ -177,19 +177,20 @@
       <div class="cta-strip feature-strip">
         <div>
           <strong>Available on multiple platforms</strong>
-          <div>Windows, Linux and Android editions are active. The Pro page highlights planned Android power-user extras, while macOS remains on the roadmap.</div>
+          <div>Windows, Linux, macOS and Android editions are active. The Pro page separately highlights planned Android power-user extras.</div>
         </div>
-        <div class="platforms">
-          <span class="platform active">Windows <span class="badge-active" data-i18n="active">Active!</span></span>
-          <span class="platform active">🐧 Linux <span class="badge-active" data-i18n="active">Active!</span></span>
-          <span class="platform active">Android <span class="badge-active" data-i18n="active">Active!</span></span>
-          <span class="platform future">macOS <span class="badge-coming" data-i18n="coming">Coming!</span></span>
+        <div class="platforms platform-downloads">
+          <a class="platform platform-download windows" href="https://github.com/beyond-commander/beyondcmd/releases" target="_blank" rel="noopener"><span>Windows</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
+          <a class="platform platform-download linux" href="https://github.com/beyond-commander/beyondcmd/releases" target="_blank" rel="noopener"><span>Linux</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
+          <a class="platform platform-download macos" href="https://github.com/beyond-commander/beyondcmd.app/releases" target="_blank" rel="noopener"><span>macOS</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
+          <a class="platform platform-download android" href="https://github.com/beyond-commander/beyondcmd/releases" target="_blank" rel="noopener"><span>Android</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
         </div>
       </div>
     </div>
   </section>
 </main>
-<div id="foot"><footer class="footer"><div class="wrap"><strong>Beyond Commander</strong><div>File management beyond the classic Commander model.</div></div></footer></div>
+<div id="foot"></div>
 <script src="assets/site.js"></script>
+<script>document.getElementById('nav').innerHTML=nav('features');document.getElementById('foot').innerHTML=footer();</script>
 </body>
 </html>

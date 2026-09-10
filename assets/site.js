@@ -2,17 +2,17 @@ const betaUrl='https://github.com/beyond-commander/beyondcmd/wiki/Beta-Testers';
 const supportEmailCodes=[98,101,121,111,110,100,99,109,100,50,48,48,54,64,103,109,97,105,108,46,99,111,109];
 function supportEmail(){return String.fromCharCode(...supportEmailCodes)}
 const I={
-en:{home:'Home',features:'Features',plugins:'Plugins',license:'License',support:'Contact',about:'About',tagline:'Beyond file management',lang:'English',eyebrow:'Next-generation, multi-platform file manager',hero2:'Much more than a Total Commander alternative!',heroCopy:'A modern, fast and productive dual-pane file manager with advanced operations, extensibility, WCL modules, automation and a platform-first architecture. Windows, Linux and Android are available; macOS is coming.',beta:'Beta tester: Sign up',order:'License: Order',free:'Free download!',freeSub:'Beta builds are distributed through the beta program.',priceFrom:'License: 25 EUR + VAT',priceSub:'One user license, simple pricing.',platforms:'Platforms',platformsFancy:'Multi-platform support',windows:'Windows',macos:'macOS',linuxShort:'Linux',android:'Android',active:'Active!',coming:'Coming!',soon:'Arrived! Sign up as a beta tester!',linux:'Linux — active',pluginWidgetTitle:'Plugins & WCL modules',pluginWidgetCopy:'Extend Beyond Commander with additional community plugin functionality.',pluginWidgetButton:'Download plugins',featuresTitle:'Features',featuresLead:'The familiar Commander workflow, extended with modern tools and Linux/KDE integration.',basics:'Core functions',extras:'Highlighted extras',pluginsTitle:'Plugins',pluginsLead:'Compatibility refers to the plugin binary/API itself, not to whether a Beyond Commander build for that platform has already been released.',family:'Plugin family',purpose:'Purpose',source:'Catalogue / source',wcx:'Packer / archive plugins',wfx:'File-system plugins',wlx:'Lister / viewer plugins',wdx:'Content / metadata plugins',native:'Native ABI',bridge:'PE/Wine bridge needed',port:'Port/build dependent',pluginsNote:'Native plugins compiled for the host platform can be loaded directly. Windows PE Total Commander plugins on Linux require the PE/Wine bridge and must not be presented as native Linux plugins.',installers:'Installers are coming',installersD:'Planned for all major platforms. Linux packages: AppImage, DEB and RPM. Planned distribution coverage includes Ubuntu, Debian, Linux Mint, Fedora, openSUSE, blackPanther OS and other compatible distributions.',licenseTitle:'License & pricing',licenseLead:'One simple user-based price, following the practical licensing principles used by Total Commander.',uniform:'Uniform price',vat:' + VAT / user',trial:'30-day trial',trialD:'Use the complete trial for 30 days. After the trial, purchase a license or remove the software.',userLic:'One license belongs to one user',userLicD:'The license is assigned to a person rather than one computer.',multiPC:'Multiple computers for the same user',multiPCD:'The licensed user may use Beyond Commander on multiple personal/work computers.',concurrent:'Business licensing by concurrent users',concurrentD:'Organizations need approximately as many user licenses as the maximum number of people using the software at the same time.',updates:'Updates included',updatesD:'Registered users receive product updates under the published license terms.',buy:'Order license',tcRef:'Licensing model reference: Total Commander ordering/FAQ',supportTitle:'Support',supportLead:'Licensed users can request product support and receive updates, fixes and documentation.',s1:'Product support',s1d:'Help with installation, configuration and normal product use.',s2:'Updates & bug fixes',s2d:'Ongoing versions with stability, compatibility and security fixes.',s3:'Documentation & FAQ',s3d:'Guides, troubleshooting information and practical usage notes.',s4:'Issue reporting',s4d:'Report reproducible bugs and contribute feedback.',emailSupport:'Contact support by email',betaJoin:'Join the beta program',betaJoinD:'Help test Beyond Commander before public releases.'},
-hu:{home:'Főoldal',features:'Funkciók',plugins:'Bővítmények',license:'Licenc',support:'Kapcsolat',about:'Névjegy',tagline:'A fájlmenedzseren túl',lang:'Magyar',eyebrow:'Új generációs, többplatformos fájlkezelő',hero2:'Sokkal több, mint egy Total Commander alternatíva!',heroCopy:'Modern, gyors és hatékony kétpaneles fájlkezelő fejlett műveletekkel, bővíthetőséggel, WCL modulokkal, automatizálással és többplatformos architektúrával. A Windows, Linux és Android változat aktív; a macOS kiadás érkezik.',beta:'Beta teszter: Feliratkozás',order:'Licenc: Megrendelés',free:'Ingyenes letöltés!',freeSub:'A beta kiadások a beta programon keresztül érhetők el.',priceFrom:'Licenc: 25 EUR + ÁFA',priceSub:'Egy felhasználói licenc, egyszerű árazás.',platforms:'Platformok',platformsFancy:'Többplatformos támogatás',windows:'Windows',macos:'macOS',linuxShort:'Linux',android:'Android',active:'Aktív!',coming:'Jön!',soon:'Megérkezett! Jelentkezz beta teszternek!',linux:'Linux — aktív',pluginWidgetTitle:'Pluginok és WCL modulok',pluginWidgetCopy:'Bővítse Beyond Commanderét további funkciókkal a közösségi pluginok segítségével!',pluginWidgetButton:'Pluginok letöltése',featuresTitle:'Funkciók',featuresLead:'Ismerős Commander munkafolyamat modern eszközökkel és Linux/KDE integrációval.',basics:'Alapvető funkciók',extras:'Kiemelt extrák',pluginsTitle:'Bővítmények',pluginsLead:'A kompatibilitás a plugin binárisára/API-jára vonatkozik, nem arra, hogy az adott platformra megjelent-e már a Beyond Commander.',family:'Bővítménycsalád',purpose:'Feladat',source:'Katalógus / forrás',wcx:'Tömörítő / archívum pluginok',wfx:'Fájlrendszer pluginok',wlx:'Lister / néző pluginok',wdx:'Tartalom / metaadat pluginok',native:'Natív ABI',bridge:'PE/Wine bridge szükséges',port:'Port/build függő',pluginsNote:'A fogadó platformra natívan fordított plugin közvetlenül betölthető. A Windows PE Total Commander plugin Linuxon PE/Wine bridge-et igényel, ezért nem natív Linux pluginként kezelendő.',installers:'Telepítők hamarosan',installersD:'Minden fő platformra tervezve. Linuxhoz AppImage, DEB és RPM. Tervezett lefedettség: Ubuntu, Debian, Linux Mint, Fedora, openSUSE, blackPanther OS és más kompatibilis disztribúciók.',licenseTitle:'Licenc és árak',licenseLead:'Egyetlen egyszerű, felhasználóalapú ár, a Total Commander jól érthető licencelési elveinek mintájára.',uniform:'Egységes ár',vat:' + ÁFA / felhasználó',trial:'30 napos kipróbálás',trialD:'A teljes próbaváltozat 30 napig használható. Ezután licencet kell vásárolni vagy a szoftvert el kell távolítani.',userLic:'Egy licenc egy felhasználóhoz tartozik',userLicD:'A licenc személyhez kötődik, nem egyetlen számítógéphez.',multiPC:'Több saját számítógépen használható',multiPCD:'A licencelt felhasználó több saját vagy munkahelyi gépén használhatja.',concurrent:'Céges licenc az egyidejű felhasználók alapján',concurrentD:'A szükséges licencek száma az egyidejűleg használó személyek várható maximumához igazodik.',updates:'Frissítések járnak',updatesD:'A regisztrált felhasználók a közzétett feltételek szerint termékfrissítéseket kapnak.',buy:'Licenc megrendelése',tcRef:'Licencmodell referencia: Total Commander rendelés/FAQ',supportTitle:'Támogatás',supportLead:'A licencelt felhasználók terméktámogatást kérhetnek, valamint frissítéseket, hibajavításokat és dokumentációt kapnak.',s1:'Terméktámogatás',s1d:'Segítség telepítéshez, konfigurációhoz és a program használatához.',s2:'Frissítések és hibajavítások',s2d:'Új verziók stabilitási, kompatibilitási és biztonsági javításokkal.',s3:'Dokumentáció és GYIK',s3d:'Útmutatók, hibaelhárítás és gyakorlati tippek.',s4:'Hibajelentés',s4d:'Reprodukálható hibák és fejlesztési visszajelzések beküldése.',emailSupport:'Kapcsolatfelvétel e-mailben',betaJoin:'Csatlakozás a beta programhoz',betaJoinD:'Segíts a Beyond Commander tesztelésében a publikus kiadás előtt.'},
-de:{home:'Start',features:'Funktionen',plugins:'Plugins',license:'Lizenz',support:'Kontakt',about:'Über Uns',tagline:'Mehr als Dateiverwaltung',lang:'Deutsch',eyebrow:'Dateimanager der nächsten Generation für mehrere Plattformen',hero2:'Viel mehr als nur eine Total-Commander-Alternative!',heroCopy:'Moderner, schneller Dual-Pane-Dateimanager mit erweiterten Operationen und einer plattformorientierten Architektur. Windows, Linux und Android sind verfügbar; macOS folgt.',beta:'Beta-Tester: Anmelden',order:'Lizenz: Bestellen',free:'Kostenloser Download!',freeSub:'Beta-Builds werden über das Beta-Programm verteilt.',priceFrom:'Lizenz: 25 EUR + MwSt.',priceSub:'Eine Benutzerlizenz, einfache Preisgestaltung.',platforms:'Plattformen',coming:'Kommt!',soon:'Jetzt da! Als Beta-Tester anmelden!',linux:'Linux — aktiv',featuresTitle:'Funktionen',featuresLead:'Vertrauter Commander-Workflow mit modernen Werkzeugen und Linux/KDE-Integration.',basics:'Grundfunktionen',extras:'Besondere Extras',pluginsTitle:'Plugins',pluginsLead:'Kompatibilität beschreibt das Plugin-Binärformat/API, unabhängig von der aktuellen BC-Verfügbarkeit.',family:'Plugin-Familie',purpose:'Zweck',source:'Katalog / Quelle',wcx:'Packer-/Archiv-Plugins',wfx:'Dateisystem-Plugins',wlx:'Lister-/Viewer-Plugins',wdx:'Inhalts-/Metadaten-Plugins',native:'Native ABI',bridge:'PE/Wine-Bridge nötig',port:'Port/Build-abhängig',pluginsNote:'Native Plugins können direkt geladen werden. Windows-PE-Plugins benötigen unter Linux eine PE/Wine-Bridge.',installers:'Installer kommen',installersD:'Für alle Hauptplattformen geplant. Linux: AppImage, DEB und RPM.',licenseTitle:'Lizenz & Preise',licenseLead:'Ein einfacher benutzerbasierter Preis nach dem verständlichen Lizenzprinzip von Total Commander.',uniform:'Einheitlicher Preis',vat:' + MwSt. / Benutzer',trial:'30-Tage-Test',trialD:'30 Tage testen, danach Lizenz kaufen oder Software entfernen.',userLic:'Eine Lizenz pro Benutzer',userLicD:'Die Lizenz gehört einer Person, nicht einem einzelnen PC.',multiPC:'Mehrere Computer desselben Benutzers',multiPCD:'Nutzung auf mehreren eigenen Arbeits-/Privatrechnern.',concurrent:'Firmenlizenz nach gleichzeitigen Benutzern',concurrentD:'Die Anzahl richtet sich nach der maximalen gleichzeitigen Nutzung.',updates:'Updates inklusive',updatesD:'Registrierte Benutzer erhalten Updates gemäß den veröffentlichten Bedingungen.',buy:'Lizenz bestellen',tcRef:'Lizenzmodell-Referenz: Total Commander Bestellung/FAQ',supportTitle:'Support',supportLead:'Lizenzierte Benutzer erhalten Produktsupport, Updates, Fehlerbehebungen und Dokumentation.',s1:'Produktsupport',s1d:'Hilfe bei Installation, Konfiguration und Nutzung.',s2:'Updates & Fehlerbehebungen',s2d:'Regelmäßige Versionen mit Stabilitäts- und Sicherheitskorrekturen.',s3:'Dokumentation & FAQ',s3d:'Anleitungen und Fehlerbehebung.',s4:'Fehler melden',s4d:'Reproduzierbare Fehler und Feedback melden.',emailSupport:'Support per E-Mail',betaJoin:'Beta-Programm',betaJoinD:'Beyond Commander vor der Veröffentlichung testen.'}}
+en:{home:'Home',features:'Features',pro:'Pro',plugins:'Plugins',license:'License',support:'Contact',about:'About',tagline:'Beyond file management',lang:'English',eyebrow:'Next-generation, multi-platform file manager',hero2:'Much more than a Total Commander alternative!',heroCopy:'A modern, fast and productive dual-pane file manager with advanced operations, extensibility, WCL modules, automation and a platform-first architecture. Linux, Windows, macOS and Android builds are available; macOS releases are published separately.',beta:'Beta tester: Sign up',order:'License: Order',free:'Free download!',freeSub:'Available builds can be downloaded free of charge.',priceFrom:'License: 25 EUR + VAT',priceSub:'One user license, simple pricing.',platforms:'Platforms',platformsFancy:'Choose a platform to download',windows:'Windows',macos:'macOS',linuxShort:'Linux',android:'Android',active:'Active',coming:'Coming!',heroStatus:'Arrived! Sign up as a beta tester!',linux:'Linux — active',pluginWidgetTitle:'Plugins & WCL modules',pluginWidgetCopy:'Extend Beyond Commander with additional community plugin functionality.',pluginWidgetButton:'Download plugins',featuresTitle:'Features',featuresLead:'The familiar Commander workflow, extended with modern tools and native multi-platform editions.',basics:'Core functions',extras:'Highlighted extras',pluginsTitle:'Plugins',pluginsLead:'Compatibility refers to the plugin binary/API itself, not to whether a Beyond Commander build for that platform has already been released.',family:'Plugin family',purpose:'Purpose',source:'Catalogue / source',wcx:'Packer / archive plugins',wfx:'File-system plugins',wlx:'Lister / viewer plugins',wdx:'Content / metadata plugins',native:'Native ABI',bridge:'PE/Wine bridge needed',port:'Port/build dependent',pluginsNote:'Native plugins compiled for the host platform can be loaded directly. Windows PE Total Commander plugins on Linux require the PE/Wine bridge and must not be presented as native Linux plugins.',installers:'Linux packages',installersD:'AppImage, DEB and RPM packages are available from the Beyond Commander releases page.',licenseTitle:'License & pricing',licenseLead:'One simple user-based price, following the practical licensing principles used by Total Commander.',uniform:'Uniform price',vat:' + VAT / user',trial:'30-day trial',trialD:'Use the complete trial for 30 days. After the trial, purchase a license or remove the software.',userLic:'One license belongs to one user',userLicD:'The license is assigned to a person rather than one computer.',multiPC:'Multiple computers for the same user',multiPCD:'The licensed user may use Beyond Commander on multiple personal/work computers.',concurrent:'Business licensing by concurrent users',concurrentD:'Organizations need approximately as many user licenses as the maximum number of people using the software at the same time.',updates:'Updates included',updatesD:'Registered users receive product updates under the published license terms.',buy:'Order license',tcRef:'Licensing model reference: Total Commander ordering/FAQ',supportTitle:'Support',supportLead:'Licensed users can request product support and receive updates, fixes and documentation.',s1:'Product support',s1d:'Help with installation, configuration and normal product use.',s2:'Updates & bug fixes',s2d:'Ongoing versions with stability, compatibility and security fixes.',s3:'Documentation & FAQ',s3d:'Guides, troubleshooting information and practical usage notes.',s4:'Issue reporting',s4d:'Report reproducible bugs and contribute feedback.',emailSupport:'Contact support by email',betaJoin:'Join the beta program',betaJoinD:'Help test Beyond Commander before public releases.'},
+hu:{home:'Főoldal',features:'Funkciók',pro:'Pro',plugins:'Bővítmények',license:'Licenc',support:'Kapcsolat',about:'Névjegy',tagline:'A fájlmenedzseren túl',lang:'Magyar',eyebrow:'Új generációs, többplatformos fájlkezelő',hero2:'Sokkal több, mint egy Total Commander alternatíva!',heroCopy:'Modern, gyors és hatékony kétpaneles fájlkezelő fejlett műveletekkel, bővíthetőséggel, WCL modulokkal, automatizálással és többplatformos architektúrával. Linux, Windows, macOS és Android változat is elérhető; a macOS kiadások külön release oldalon jelennek meg.',beta:'Beta teszter: Feliratkozás',order:'Licenc: Megrendelés',free:'Ingyenes letöltés!',freeSub:'A jelenleg elérhető kiadások ingyenesen letölthetők.',priceFrom:'Licenc: 25 EUR + ÁFA',priceSub:'Egy felhasználói licenc, egyszerű árazás.',platforms:'Platformok',platformsFancy:'Válassz platformot a letöltéshez',windows:'Windows',macos:'macOS',linuxShort:'Linux',android:'Android',active:'Aktív',coming:'Jön!',heroStatus:'Megérkezett! Jelentkezz beta teszternek!',linux:'Linux — aktív',pluginWidgetTitle:'Pluginok és WCL modulok',pluginWidgetCopy:'Bővítse Beyond Commanderét további funkciókkal a közösségi pluginok segítségével!',pluginWidgetButton:'Pluginok letöltése',featuresTitle:'Funkciók',featuresLead:'Ismerős Commander munkafolyamat modern eszközökkel és natív többplatformos kiadásokkal.',basics:'Alapvető funkciók',extras:'Kiemelt extrák',pluginsTitle:'Bővítmények',pluginsLead:'A kompatibilitás a plugin binárisára/API-jára vonatkozik, nem arra, hogy az adott platformra megjelent-e már a Beyond Commander.',family:'Bővítménycsalád',purpose:'Feladat',source:'Katalógus / forrás',wcx:'Tömörítő / archívum pluginok',wfx:'Fájlrendszer pluginok',wlx:'Lister / néző pluginok',wdx:'Tartalom / metaadat pluginok',native:'Natív ABI',bridge:'PE/Wine bridge szükséges',port:'Port/build függő',pluginsNote:'A fogadó platformra natívan fordított plugin közvetlenül betölthető. A Windows PE Total Commander plugin Linuxon PE/Wine bridge-et igényel, ezért nem natív Linux pluginként kezelendő.',installers:'Linux csomagok',installersD:'Az AppImage, DEB és RPM csomagok elérhetők a Beyond Commander kiadások oldalán.',licenseTitle:'Licenc és árak',licenseLead:'Egyetlen egyszerű, felhasználóalapú ár, a Total Commander jól érthető licencelési elveinek mintájára.',uniform:'Egységes ár',vat:' + ÁFA / felhasználó',trial:'30 napos kipróbálás',trialD:'A teljes próbaváltozat 30 napig használható. Ezután licencet kell vásárolni vagy a szoftvert el kell távolítani.',userLic:'Egy licenc egy felhasználóhoz tartozik',userLicD:'A licenc személyhez kötődik, nem egyetlen számítógéphez.',multiPC:'Több saját számítógépen használható',multiPCD:'A licencelt felhasználó több saját vagy munkahelyi gépén használhatja.',concurrent:'Céges licenc az egyidejű felhasználók alapján',concurrentD:'A szükséges licencek száma az egyidejűleg használó személyek várható maximumához igazodik.',updates:'Frissítések járnak',updatesD:'A regisztrált felhasználók a közzétett feltételek szerint termékfrissítéseket kapnak.',buy:'Licenc megrendelése',tcRef:'Licencmodell referencia: Total Commander rendelés/FAQ',supportTitle:'Támogatás',supportLead:'A licencelt felhasználók terméktámogatást kérhetnek, valamint frissítéseket, hibajavításokat és dokumentációt kapnak.',s1:'Terméktámogatás',s1d:'Segítség telepítéshez, konfigurációhoz és a program használatához.',s2:'Frissítések és hibajavítások',s2d:'Új verziók stabilitási, kompatibilitási és biztonsági javításokkal.',s3:'Dokumentáció és GYIK',s3d:'Útmutatók, hibaelhárítás és gyakorlati tippek.',s4:'Hibajelentés',s4d:'Reprodukálható hibák és fejlesztési visszajelzések beküldése.',emailSupport:'Kapcsolatfelvétel e-mailben',betaJoin:'Csatlakozás a beta programhoz',betaJoinD:'Segíts a Beyond Commander tesztelésében a publikus kiadás előtt.'},
+de:{home:'Start',features:'Funktionen',pro:'Pro',plugins:'Plugins',license:'Lizenz',support:'Kontakt',about:'Über Uns',tagline:'Mehr als Dateiverwaltung',lang:'Deutsch',eyebrow:'Dateimanager der nächsten Generation für mehrere Plattformen',hero2:'Viel mehr als nur eine Total-Commander-Alternative!',heroCopy:'Moderner, schneller Dual-Pane-Dateimanager mit erweiterten Operationen und einer plattformorientierten Architektur. Linux-, Windows-, macOS- und Android-Builds sind verfügbar; macOS-Releases werden separat veröffentlicht.',beta:'Beta-Tester: Anmelden',order:'Lizenz: Bestellen',free:'Kostenloser Download!',freeSub:'Verfügbare Builds können kostenlos heruntergeladen werden.',priceFrom:'Lizenz: 25 EUR + MwSt.',priceSub:'Eine Benutzerlizenz, einfache Preisgestaltung.',platforms:'Plattformen',platformsFancy:'Plattform zum Download auswählen',windows:'Windows',macos:'macOS',linuxShort:'Linux',android:'Android',active:'Aktiv',coming:'Kommt!',heroStatus:'Angekommen! Als Beta-Tester anmelden!',linux:'Linux — aktiv',featuresTitle:'Funktionen',featuresLead:'Vertrauter Commander-Workflow mit modernen Werkzeugen und nativen Multi-Plattform-Ausgaben.',basics:'Grundfunktionen',extras:'Besondere Extras',pluginsTitle:'Plugins',pluginsLead:'Kompatibilität beschreibt das Plugin-Binärformat/API, unabhängig von der aktuellen BC-Verfügbarkeit.',family:'Plugin-Familie',purpose:'Zweck',source:'Katalog / Quelle',wcx:'Packer-/Archiv-Plugins',wfx:'Dateisystem-Plugins',wlx:'Lister-/Viewer-Plugins',wdx:'Inhalts-/Metadaten-Plugins',native:'Native ABI',bridge:'PE/Wine-Bridge nötig',port:'Port/Build-abhängig',pluginsNote:'Native Plugins können direkt geladen werden. Windows-PE-Plugins benötigen unter Linux eine PE/Wine-Bridge.',installers:'Linux-Pakete',installersD:'AppImage-, DEB- und RPM-Pakete sind auf der Beyond-Commander-Releases-Seite verfügbar.',licenseTitle:'Lizenz & Preise',licenseLead:'Ein einfacher benutzerbasierter Preis nach dem verständlichen Lizenzprinzip von Total Commander.',uniform:'Einheitlicher Preis',vat:' + MwSt. / Benutzer',trial:'30-Tage-Test',trialD:'30 Tage testen, danach Lizenz kaufen oder Software entfernen.',userLic:'Eine Lizenz pro Benutzer',userLicD:'Die Lizenz gehört einer Person, nicht einem einzelnen PC.',multiPC:'Mehrere Computer desselben Benutzers',multiPCD:'Nutzung auf mehreren eigenen Arbeits-/Privatrechnern.',concurrent:'Firmenlizenz nach gleichzeitigen Benutzern',concurrentD:'Die Anzahl richtet sich nach der maximalen gleichzeitigen Nutzung.',updates:'Updates inklusive',updatesD:'Registrierte Benutzer erhalten Updates gemäß den veröffentlichten Bedingungen.',buy:'Lizenz bestellen',tcRef:'Lizenzmodell-Referenz: Total Commander Bestellung/FAQ',supportTitle:'Support',supportLead:'Lizenzierte Benutzer erhalten Produktsupport, Updates, Fehlerbehebungen und Dokumentation.',s1:'Produktsupport',s1d:'Hilfe bei Installation, Konfiguration und Nutzung.',s2:'Updates & Fehlerbehebungen',s2d:'Regelmäßige Versionen mit Stabilitäts- und Sicherheitskorrekturen.',s3:'Dokumentation & FAQ',s3d:'Anleitungen und Fehlerbehebung.',s4:'Fehler melden',s4d:'Reproduzierbare Fehler und Feedback melden.',emailSupport:'Support per E-Mail',betaJoin:'Beta-Programm',betaJoinD:'Beyond Commander vor der Veröffentlichung testen.'}}
  
 Object.assign(I.en,{
   extensibility:'Extensible',
   extensibilityD:'WCX/WFX/WLX/WDX compatibility layers, WCL modules and native integrations.',
   modern:'Advanced operations',
   modernD:'Fast copy/move, search, synchronization, views, gallery, checksums and more.',
-  multiplat:'Multi-platform roadmap',
-  multiplatD:'Windows, Linux and Android editions are active; macOS is coming.',
+  multiplat:'Multi-platform support',
+  multiplatD:'Native editions are available for Linux, Windows, macOS and Android.',
   open:'Open source',
   openD:'Transparent development, community feedback and a continuously evolving project.',
   perf:'High performance',
@@ -23,8 +23,8 @@ Object.assign(I.hu,{
   extensibilityD:'WCX/WFX/WLX/WDX kompatibilitási rétegek, WCL modulok és natív integrációk.',
   modern:'Fejlett műveletek',
   modernD:'Gyors másolás/mozgatás, keresés, szinkronizálás, nézetek, galéria, ellenőrzőösszegek és még sok más.',
-  multiplat:'Többplatformos fejlesztés',
-  multiplatD:'A Windows, Linux és Android kiadás aktív; a macOS változat érkezik.',
+  multiplat:'Többplatformos támogatás',
+  multiplatD:'Natív kiadások érhetők el Linux, Windows, macOS és Android rendszerekre.',
   open:'Nyílt forráskód',
   openD:'Átlátható fejlesztés, közösségi visszajelzés és folyamatosan fejlődő projekt.',
   perf:'Nagy teljesítmény',
@@ -35,8 +35,8 @@ Object.assign(I.de,{
   extensibilityD:'WCX/WFX/WLX/WDX-Kompatibilitätsschichten, WCL-Module und native Integrationen.',
   modern:'Erweiterte Operationen',
   modernD:'Schnelles Kopieren/Verschieben, Suche, Synchronisierung, Ansichten, Galerie, Prüfsummen und mehr.',
-  multiplat:'Multi-Plattform-Roadmap',
-  multiplatD:'Windows-, Linux- und Android-Ausgaben sind aktiv; macOS folgt.',
+  multiplat:'Multi-Plattform-Unterstützung',
+  multiplatD:'Native Ausgaben sind für Linux, Windows, macOS und Android verfügbar.',
   open:'Open Source',
   openD:'Transparente Entwicklung, Community-Feedback und ein kontinuierlich wachsendes Projekt.',
   perf:'Hohe Leistung',
@@ -130,93 +130,79 @@ Object.assign(I.de,{
   gallerySource:'Die Screenshots wurden aus dem offiziellen Beyond-Commander-GitHub-Repository in die Website übernommen.'
 });
 
-// Pro edition, GitHub CTA and SEO-safe text fallbacks.
+
 Object.assign(I.en,{
-  "pro": "Pro",
-  "githubVisit": "Visit GitHub releases",
-  "freeSub": "Public and beta builds are available on GitHub Releases.",
-  "proEyebrow": "Android Pro edition",
-  "proTitle": "Beyond Commander Pro for Android",
-  "proLead": "A planned premium Android edition for power users who need deeper inspection, administration and endpoint-security tools directly inside the file manager.",
-  "proStatus": "Planned / coming",
-  "proFeaturesTitle": "Pro tools for Android power users",
-  "proFeaturesLead": "The Pro roadmap extends the Android edition with integrated low-level tools while keeping the familiar Commander workflow.",
-  "proHex": "Hex editor",
-  "proHexD": "Inspect and edit files at byte level with offsets, hexadecimal values and text representation in one focused view.",
-  "proConsole": "Console",
-  "proConsoleD": "Open an integrated command console for advanced file-system and administration workflows without leaving Beyond Commander.",
-  "proVirus": "Virus scan",
-  "proVirusD": "Run on-demand file and folder malware checks from the Android file-management workflow, with clear scan status and results.",
-  "proOps": "Advanced operations",
-  "proOpsD": "Extended batch, queue and power-user operations designed for larger or more complex file-management jobs.",
-  "proSentinel": "Sentinel Endpoint",
-  "proSentinelD": "Planned integration with Sentinel Endpoint for device-security status, protection telemetry and security-oriented actions.",
-  "proRoadmapTitle": "Built on Beyond Commander Android",
-  "proRoadmapD": "Pro is a planned extension of the Android edition. The standard Android experience remains the foundation; Pro adds the advanced tools above as they become ready.",
-  "proFollow": "Follow Pro releases on GitHub"
+  pro:'Pro',
+  proEyebrow:'Android Pro edition',
+  proTitle:'Beyond Commander Pro for Android',
+  proLead:'A planned premium Android edition for power users who need deeper inspection, administration and endpoint-security tools directly inside the file manager.',
+  proStatus:'Planned / coming',
+  proFollow:'Follow Pro releases on GitHub',
+  proFeaturesTitle:'Pro tools for Android power users',
+  proFeaturesLead:'The Pro roadmap extends the Android edition with integrated low-level tools while keeping the familiar Commander workflow.',
+  proHex:'Hex editor',
+  proHexD:'Inspect and edit files at byte level with offsets, hexadecimal values and text representation in one focused view.',
+  proConsole:'Console',
+  proConsoleD:'Open an integrated command console for advanced file-system and administration workflows without leaving Beyond Commander.',
+  proVirus:'Virus scan',
+  proVirusD:'Run on-demand file and folder malware checks from the Android file-management workflow, with clear scan status and results.',
+  proOps:'Advanced operations',
+  proOpsD:'Extended batch, queue and power-user operations designed for larger or more complex file-management jobs.',
+  proSentinel:'Sentinel Endpoint',
+  proSentinelD:'Planned integration with Sentinel Endpoint for device-security status, protection telemetry and security-oriented actions.',
+  proRoadmapTitle:'Built on Beyond Commander Android',
+  proRoadmapD:'Pro is a planned extension of the Android edition. The standard Android experience remains the foundation; Pro adds the advanced tools above as they become ready.',
+  githubVisit:'Visit GitHub releases'
 });
 Object.assign(I.hu,{
-  "pro": "Pro",
-  "githubVisit": "Nézd be a Githubra",
-  "freeSub": "A publikus és béta kiadások a GitHub Releases oldalon érhetők el.",
-  "proEyebrow": "Android Pro kiadás",
-  "proTitle": "Beyond Commander Pro Androidra",
-  "proLead": "Tervezett prémium Android-kiadás azoknak a haladó felhasználóknak, akik mélyebb vizsgálati, adminisztrációs és végpontvédelmi eszközöket szeretnének közvetlenül a fájlkezelőben.",
-  "proStatus": "Tervezett / hamarosan",
-  "proFeaturesTitle": "Pro eszközök haladó Android-felhasználóknak",
-  "proFeaturesLead": "A Pro fejlesztési irány az Android-változatot alacsony szintű, integrált eszközökkel bővíti, a megszokott Commander-munkafolyamat megtartásával.",
-  "proHex": "Hexa editor",
-  "proHexD": "Fájlok bájtszintű vizsgálata és szerkesztése offsetekkel, hexadecimális értékekkel és szöveges megjelenítéssel egyetlen nézetben.",
-  "proConsole": "Konzol",
-  "proConsoleD": "Integrált parancskonzol haladó fájlrendszer- és adminisztrációs műveletekhez a Beyond Commander elhagyása nélkül.",
-  "proVirus": "Víruskeresés",
-  "proVirusD": "Igény szerinti fájl- és mappavizsgálat kártevők után az Android fájlkezelési munkafolyamatából, egyértelmű állapottal és eredményekkel.",
-  "proOps": "Fejlett műveletek",
-  "proOpsD": "Kiterjesztett kötegelt, sorba állított és haladó műveletek nagyobb vagy összetettebb fájlkezelési feladatokhoz.",
-  "proSentinel": "Sentinel Endpoint",
-  "proSentinelD": "Tervezett Sentinel Endpoint integráció eszközbiztonsági állapothoz, védelmi telemetriához és biztonsági műveletekhez.",
-  "proRoadmapTitle": "A Beyond Commander Androidra épül",
-  "proRoadmapD": "A Pro az Android-változat tervezett bővítése. A normál Android-élmény marad az alap, a Pro pedig fokozatosan hozzáadja a fenti haladó eszközöket.",
-  "proFollow": "Pro kiadások követése a GitHubon"
+  pro:'Pro',
+  proEyebrow:'Android Pro kiadás',
+  proTitle:'Beyond Commander Pro Androidra',
+  proLead:'Tervezett prémium Android kiadás haladó felhasználóknak, mélyebb fájlvizsgálati, adminisztrációs és végpontvédelmi eszközökkel közvetlenül a fájlkezelőben.',
+  proStatus:'Tervezett / érkezik',
+  proFollow:'Pro kiadások követése a GitHubon',
+  proFeaturesTitle:'Pro eszközök haladó Android felhasználóknak',
+  proFeaturesLead:'A Pro ütemterv integrált alacsony szintű eszközökkel bővíti az Android kiadást, a megszokott Commander munkafolyamat megtartásával.',
+  proHex:'Hex szerkesztő',
+  proHexD:'Fájlok bájtszintű vizsgálata és szerkesztése offsetekkel, hexadecimális értékekkel és szöveges megjelenítéssel.',
+  proConsole:'Konzol',
+  proConsoleD:'Integrált parancskonzol fejlett fájlrendszer- és adminisztrációs feladatokhoz a Beyond Commander elhagyása nélkül.',
+  proVirus:'Vírusellenőrzés',
+  proVirusD:'Igény szerinti fájl- és mappaellenőrzés az Android fájlkezelési munkafolyamatból, egyértelmű állapot- és eredményjelzéssel.',
+  proOps:'Haladó műveletek',
+  proOpsD:'Kiterjesztett kötegelt, sorba állított és haladó műveletek nagyobb vagy összetettebb fájlkezelési feladatokhoz.',
+  proSentinel:'Sentinel Endpoint',
+  proSentinelD:'Tervezett Sentinel Endpoint integráció az eszközvédelmi állapothoz, telemetriához és biztonsági műveletekhez.',
+  proRoadmapTitle:'A Beyond Commander Android alapjaira épül',
+  proRoadmapD:'A Pro az Android kiadás tervezett bővítése. A standard Android élmény marad az alap, a Pro pedig az elkészült haladó eszközökkel egészíti ki.',
+  githubVisit:'GitHub kiadások megnyitása'
 });
 Object.assign(I.de,{
-  active:'Aktiv!',
-  android:'Android',
-  linuxShort:'Linux',
-  macos:'macOS',
-  platformsFancy:'Multi-Plattform-Unterstützung',
-  pluginWidgetTitle:'Plugins & WCL-Module',
-  pluginWidgetCopy:'Erweitern Sie Beyond Commander mit zusätzlichen Community-Plugin-Funktionen.',
-  pluginWidgetButton:'Plugins herunterladen',
-  windows:'Windows'
-});
-Object.assign(I.de,{
-  "pro": "Pro",
-  "githubVisit": "GitHub-Releases ansehen",
-  "freeSub": "Öffentliche und Beta-Builds sind über GitHub Releases verfügbar.",
-  "proEyebrow": "Android-Pro-Edition",
-  "proTitle": "Beyond Commander Pro für Android",
-  "proLead": "Eine geplante Premium-Android-Edition für Power-User, die tiefere Analyse-, Administrations- und Endpoint-Security-Werkzeuge direkt im Dateimanager benötigen.",
-  "proStatus": "Geplant / demnächst",
-  "proFeaturesTitle": "Pro-Werkzeuge für Android-Power-User",
-  "proFeaturesLead": "Die Pro-Roadmap erweitert die Android-Edition um integrierte Low-Level-Werkzeuge und behält den vertrauten Commander-Workflow bei.",
-  "proHex": "Hex-Editor",
-  "proHexD": "Dateien auf Byte-Ebene mit Offsets, Hexadezimalwerten und Textdarstellung in einer fokussierten Ansicht untersuchen und bearbeiten.",
-  "proConsole": "Konsole",
-  "proConsoleD": "Eine integrierte Befehlskonsole für fortgeschrittene Dateisystem- und Administrationsabläufe, ohne Beyond Commander zu verlassen.",
-  "proVirus": "Virenscan",
-  "proVirusD": "Dateien und Ordner bei Bedarf direkt aus dem Android-Dateimanager auf Schadsoftware prüfen, mit klarer Status- und Ergebnisanzeige.",
-  "proOps": "Erweiterte Operationen",
-  "proOpsD": "Erweiterte Stapel-, Warteschlangen- und Power-User-Operationen für größere oder komplexere Dateiverwaltungsaufgaben.",
-  "proSentinel": "Sentinel Endpoint",
-  "proSentinelD": "Geplante Sentinel-Endpoint-Integration für Gerätesicherheitsstatus, Schutztelemetrie und sicherheitsbezogene Aktionen.",
-  "proRoadmapTitle": "Auf Beyond Commander Android aufgebaut",
-  "proRoadmapD": "Pro ist als Erweiterung der Android-Edition geplant. Die Standard-Android-Erfahrung bleibt die Basis; Pro ergänzt die oben genannten Profiwerkzeuge schrittweise.",
-  "proFollow": "Pro-Releases auf GitHub verfolgen"
+  pro:'Pro',
+  proEyebrow:'Android-Pro-Edition',
+  proTitle:'Beyond Commander Pro für Android',
+  proLead:'Eine geplante Premium-Android-Edition für Power-User mit tieferen Prüf-, Administrations- und Endpoint-Sicherheitswerkzeugen direkt im Dateimanager.',
+  proStatus:'Geplant / kommt',
+  proFollow:'Pro-Releases auf GitHub verfolgen',
+  proFeaturesTitle:'Pro-Werkzeuge für Android-Power-User',
+  proFeaturesLead:'Die Pro-Roadmap erweitert die Android-Edition um integrierte Low-Level-Werkzeuge und behält den vertrauten Commander-Workflow bei.',
+  proHex:'Hex-Editor',
+  proHexD:'Dateien auf Byte-Ebene mit Offsets, Hex-Werten und Textdarstellung untersuchen und bearbeiten.',
+  proConsole:'Konsole',
+  proConsoleD:'Eine integrierte Befehlskonsole für fortgeschrittene Dateisystem- und Administrationsabläufe öffnen.',
+  proVirus:'Virenscan',
+  proVirusD:'Dateien und Ordner bei Bedarf direkt aus dem Android-Dateimanager prüfen, mit klaren Status- und Ergebnisanzeigen.',
+  proOps:'Erweiterte Operationen',
+  proOpsD:'Erweiterte Batch-, Queue- und Power-User-Funktionen für größere oder komplexere Dateiverwaltungsaufgaben.',
+  proSentinel:'Sentinel Endpoint',
+  proSentinelD:'Geplante Integration mit Sentinel Endpoint für Gerätesicherheitsstatus, Telemetrie und sicherheitsbezogene Aktionen.',
+  proRoadmapTitle:'Auf Beyond Commander Android aufgebaut',
+  proRoadmapD:'Pro ist eine geplante Erweiterung der Android-Edition. Die Standard-Android-Erfahrung bleibt die Basis; Pro ergänzt die erweiterten Werkzeuge, sobald sie bereit sind.',
+  githubVisit:'GitHub-Releases öffnen'
 });
 
-let lang=localStorage.getItem('bc-lang-explicit')||'en'; function t(k){return I[lang]?.[k]||I.en[k]||k} function setLang(x){lang=I[x]?x:'en';localStorage.setItem('bc-lang-explicit',lang);render();closeLang()} function closeLang(){document.querySelector('.lang-menu')?.classList.remove('open')}
-function nav(active){return `<header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img class="brand-logo" src="assets/bc2.svg" alt="Beyond Commander"><span><strong>BEYOND COMMANDER</strong><small data-i18n="tagline">Beyond file management</small></span></a><nav class="navlinks"><a href="index.html" class="${active==='home'?'active':''}" data-i18n="home">Home</a><a href="features.html" class="${active==='features'?'active':''}" data-i18n="features">Features</a><a href="gallery.html" class="${active==='gallery'?'active':''}" data-i18n="gallery">Gallery</a><a href="plugins.html" class="${active==='plugins'?'active':''}" data-i18n="plugins">Plugins</a><a href="pro.html" class="${active==='pro'?'active':''}" data-i18n="pro">Pro</a><a href="license.html" class="${active==='license'?'active':''}" data-i18n="license">License</a><a href="support.html" class="${active==='support'?'active':''}" data-i18n="support">Contact</a><a href="about.html" class="${active==='about'?'active':''}" data-i18n="about">About</a></nav><div class="lang"><button data-lang-label>English ▾</button><div class="lang-menu"><button onclick="setLang('en')">English</button><button onclick="setLang('hu')">Magyar</button><button onclick="setLang('de')">Deutsch</button></div></div></div></header>`}
+let lang=localStorage.getItem('bc-lang')||'en'; function t(k){return I[lang]?.[k]||I.en[k]||k} function setLang(x){lang=I[x]?x:'en';localStorage.setItem('bc-lang',lang);render();closeLang()} function closeLang(){document.querySelector('.lang-menu')?.classList.remove('open')}
+function nav(active){return `<header class="site-header"><div class="wrap navbar"><a class="brand" href="index.html"><img class="brand-logo" src="assets/bc2.svg" alt="Beyond Commander"><span><strong>BEYOND COMMANDER</strong><small data-i18n="tagline"></small></span></a><nav class="navlinks"><a href="index.html" class="${active==='home'?'active':''}" data-i18n="home"></a><a href="features.html" class="${active==='features'?'active':''}" data-i18n="features"></a><a href="gallery.html" class="${active==='gallery'?'active':''}" data-i18n="gallery"></a><a href="plugins.html" class="${active==='plugins'?'active':''}" data-i18n="plugins"></a><a href="pro.html" class="${active==='pro'?'active':''}" data-i18n="pro"></a><a href="license.html" class="${active==='license'?'active':''}" data-i18n="license"></a><a href="support.html" class="${active==='support'?'active':''}" data-i18n="support"></a><a href="about.html" class="${active==='about'?'active':''}" data-i18n="about"></a></nav><div class="lang"><button data-lang-label></button><div class="lang-menu"><button onclick="setLang('en')">English</button><button onclick="setLang('hu')">Magyar</button><button onclick="setLang('de')">Deutsch</button></div></div></div></header>`}
 function footer(){return `<footer class="footer"><div class="wrap"><strong>Beyond Commander</strong><div>File management beyond the classic Commander model.</div></div></footer>`}
 const L=[
 ['📁 [..]','','','',''],
@@ -275,10 +261,9 @@ function mock(){
         <div class="file-list">${rows(R,8)}</div>
       </div>
     </div>
-    <div class="soon-overlay">Arrived! Sign up as a beta tester!</div>
     <div class="bc-footer-info"><span>0 / 3 files, 0 / 5 folders, 0 bytes / 3.6 KB</span><span>0 / 4 files, 0 / 5 folders, 0 bytes / 16.6 MB</span></div>
     <div class="bc-keys"><div>F3 View</div><div>F4 Edit</div><div>F5 Copy</div><div>F6 Move</div><div>F7 New folder</div><div>F8 Delete</div><div>Alt+F4 Exit</div></div>
   </div>`
 }
-function render(){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(e=>e.textContent=t(e.dataset.i18n));document.querySelectorAll('[data-lang-label]').forEach(e=>e.textContent=t('lang')+' ▾');document.querySelectorAll('[data-beta]').forEach(e=>e.href=betaUrl);document.querySelectorAll('[data-support-email]').forEach(e=>e.href=`mailto:${supportEmail()}?subject=Beyond%20Commander%20support`);document.querySelectorAll('[data-contact-email]').forEach(e=>e.textContent=supportEmail());document.querySelectorAll('[data-contact-email-link]').forEach(e=>{e.textContent=supportEmail();e.href=`mailto:${supportEmail()}?subject=Beyond%20Commander`});document.querySelectorAll('[data-mock]').forEach(e=>{let v=e.dataset.mock;e.innerHTML=v==='deck'?`<div class="hero-shot-wrap"><div class="hero-shot" role="img" aria-label="Beyond Commander themed preview"></div><div class="hero-shot-overlay">${t('soon')}</div></div>`:`<div class="bc-card ${v||'light'}">${mock()}</div>`})}
+function render(){document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(e=>{const k=e.dataset.i18n;const v=I[lang]?.[k]??I.en?.[k];if(v!==undefined)e.textContent=v});document.querySelectorAll('[data-lang-label]').forEach(e=>e.textContent=t('lang')+' ▾');document.querySelectorAll('[data-beta]').forEach(e=>e.href=betaUrl);document.querySelectorAll('[data-support-email]').forEach(e=>e.href=`mailto:${supportEmail()}?subject=Beyond%20Commander%20support`);document.querySelectorAll('[data-contact-email]').forEach(e=>e.textContent=supportEmail());document.querySelectorAll('[data-contact-email-link]').forEach(e=>{e.textContent=supportEmail();e.href=`mailto:${supportEmail()}?subject=Beyond%20Commander`});document.querySelectorAll('[data-mock]').forEach(e=>{let v=e.dataset.mock;e.innerHTML=v==='deck'?`<div class="hero-shot-wrap"><div class="hero-shot" role="img" aria-label="Beyond Commander themed preview"></div><div class="hero-shot-overlay">${t('heroStatus')}</div></div>`:`<div class="bc-card ${v||'light'}">${mock()}</div>`})}
 document.addEventListener('click',e=>{if(e.target.matches('[data-lang-label]'))e.target.nextElementSibling.classList.toggle('open');else if(!e.target.closest('.lang'))closeLang()});document.addEventListener('DOMContentLoaded',render);
