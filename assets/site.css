@@ -3494,3 +3494,20 @@ body.gallery-modal-open{overflow:hidden}
 @media(max-width:520px){
   .bug-report-links{grid-template-columns:1fr}
 }
+
+
+/* Final round fixes */
+.license-preview-card{
+  margin-top:22px;
+  padding:14px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:0 8px 26px rgba(23,46,86,.06);
+}
+.license-preview-card img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
