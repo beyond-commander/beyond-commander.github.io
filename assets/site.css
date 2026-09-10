@@ -3496,18 +3496,26 @@ body.gallery-modal-open{overflow:hidden}
 }
 
 
-/* Final round fixes */
-.license-preview-card{
-  margin-top:22px;
-  padding:14px;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:18px;
-  box-shadow:0 8px 26px rgba(23,46,86,.06);
-}
-.license-preview-card img{
+
+
+/* License artwork: direct image, no generated preview container */
+.license-main-image{
+  display:block;
   width:100%;
   height:auto;
+  margin-top:22px;
+  border-radius:18px;
+  box-shadow:0 12px 32px rgba(23,46,86,.10);
+}
+
+
+/* License page image size fix */
+.license-main-image{
+  max-width:760px;
+  width:min(100%, 760px);
+  height:auto;
   display:block;
-  border-radius:12px;
+  margin:22px auto 0;
+  border-radius:18px;
+  box-shadow:0 12px 32px rgba(23,46,86,.10);
 }
