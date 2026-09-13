@@ -50,7 +50,7 @@
 </div>
 </div>
 <div class="hero-image-card">
-<img alt="Beyond Commander feature comparison" data-i18n-alt="featuresImageAlt" src="assets/features-comparison-light.png"/>
+<img alt="TC vs BC feature comparison" data-i18n-alt="featuresImageAlt" decoding="async" fetchpriority="high" loading="eager" src="assets/features-comparison-light.webp" type="image/webp"/>
 </div>
 </div>
 </section>
@@ -66,7 +66,7 @@
 </div>
 </div>
 </section>
-<section class="section">
+<section class="section section-v070"><div class="wrap"><h2 data-i18n="featureV070Title">New in Beyond Commander 0.7.0</h2><p class="section-lead" data-i18n="featureV070Lead">Version 0.7.0 adds workflow, archive, editing, desktop-integration and distribution improvements across the supported platforms.</p><div class="detail-grid v070-grid"><article class="detail-card v070-card"><h3 data-i18n="v070TabsTitle">Locked &amp; persistent tabs</h3><p data-i18n="v070TabsD">Lock tabs, keep their state across sessions and isolate locks even when two tabs point to the same path.</p></article><article class="detail-card v070-card"><h3 data-i18n="v070NestedTitle">Nested RPM / SRPM / archives</h3><p data-i18n="v070NestedD">Browse nested package and archive content more naturally, including RPM and source-RPM workflows.</p></article><article class="detail-card v070-card"><h3 data-i18n="v070SelectionTitle">Commander selection upgrades</h3><p data-i18n="v070SelectionD">Ctrl+A toggles selection, numeric +/- supports pattern selection and * provides all/none Commander-style control.</p></article><article class="detail-card v070-card"><h3 data-i18n="v070SearchReplaceTitle">Viewer &amp; editor search/replace</h3><p data-i18n="v070SearchReplaceD">F3/F4 gain visible search controls, highlighted matches, replace-one and replace-all workflows.</p></article><article class="detail-card v070-card"><h3 data-i18n="v070IntegrationTitle">Desktop integration</h3><p data-i18n="v070IntegrationD">Improved MIME and Open With handling, platform-aware file icons, Linux icon themes and better desktop integration.</p></article><article class="detail-card v070-card"><h3 data-i18n="v070TerminalUiTitle">Terminal &amp; command UI</h3><p data-i18n="v070TerminalUiD">Open a detached terminal with Ctrl+F9, use modifier-aware function-bar actions and a smarter Button Bar command chooser.</p></article><article class="detail-card v070-card"><h3 data-i18n="v070MacTitle">Universal macOS builds</h3><p data-i18n="v070MacD">Universal 2 packaging targets both arm64 and x86_64 Macs from one application build.</p></article><article class="detail-card v070-card"><h3 data-i18n="v070FlatpakTitle">Flatpak for Linux</h3><p data-i18n="v070FlatpakD">Flatpak joins AppImage, DEB and RPM as a Linux distribution format, using the io.github.BeyondCommander application ID.</p></article></div></div></section><section class="section">
 <div class="wrap">
 <h2 data-i18n="featuresListTitle">Real feature list</h2>
 <p class="section-lead" data-i18n="featuresListLead">The list below focuses on user-facing capabilities already present or integrated in Beyond Commander, without the low-level packaging and developer-only details.</p>
@@ -79,7 +79,7 @@
 <li data-i18n="featureWorkflow3">TC-style and MC-style keyboard behavior profiles</li>
 <li data-i18n="featureWorkflow4">Inline rename, slow double-click rename and multi-rename</li>
 <li data-i18n="featureWorkflow5">Commander-style selection, marking and drag &amp; drop copy or move</li>
-</ul>
+<li data-i18n="featureWorkflow6">0.7.0 selection controls: Ctrl+A toggle, +/- pattern selection and * all/none</li></ul>
 </article>
 <article class="detail-card">
 <h3 data-i18n="featureNavigationTitle">Navigation, tabs and views</h3>
@@ -89,7 +89,7 @@
 <li data-i18n="featureNavigation3">Detailed, compact and thumbnail views</li>
 <li data-i18n="featureNavigation4">Gallery view, folder tree and folder list</li>
 <li data-i18n="featureNavigation5">Branch view, custom columns and remembered layout state</li>
-</ul>
+<li data-i18n="featureNavigation6">Lockable tabs with persistence and same-path lock isolation</li></ul>
 </article>
 <article class="detail-card">
 <h3 data-i18n="featureSearchTitle">Search and quick filtering</h3>
@@ -119,7 +119,7 @@
 <li data-i18n="featureViewer3">Text, source, script and configuration file preview</li>
 <li data-i18n="featureViewer4">Syntax highlighting and image preview integration</li>
 <li data-i18n="featureViewer5">Internal or external editor choice</li>
-</ul>
+<li data-i18n="featureViewer6">F3/F4 search and replace with highlighted matches, replace-one and replace-all</li></ul>
 </article>
 <article class="detail-card">
 <h3 data-i18n="featureCompareTitle">Compare, diff and synchronize</h3>
@@ -139,7 +139,7 @@
 <li data-i18n="featureArchives3">Lazy browsing for large archives and targeted extraction when needed</li>
 <li data-i18n="featureArchives4">Extract entire archives or only selected items</li>
 <li data-i18n="featureArchives5">Create ZIP, 7z, RAR, TAR, TGZ, TBZ2, TXZ, ZST and LZMA archives</li>
-</ul>
+<li data-i18n="featureArchives6">Nested RPM, SRPM and archive browsing without flattening the workflow</li></ul>
 </article>
 <article class="detail-card">
 <h3 data-i18n="featureNetworkTitle">Network and remote access</h3>
@@ -159,7 +159,7 @@
 <li data-i18n="featureTerminal3">Vault / secure storage tools</li>
 <li data-i18n="featureTerminal4">Checksum generation and verification</li>
 <li data-i18n="featureTerminal5">Drive, storage and file-list helper tools</li>
-</ul>
+<li data-i18n="featureTerminal6">Detached terminal from the current directory with Ctrl+F9</li></ul>
 </article>
 <article class="detail-card">
 <h3 data-i18n="featureCustomizeTitle">Customization and platform support</h3>
@@ -169,7 +169,7 @@
 <li data-i18n="featureCustomize3">Configurable icons, fonts, thumbnails and zoom</li>
 <li data-i18n="featureCustomize4">Built-in help and multi-language interface</li>
 <li data-i18n="featureCustomize5">Native Linux desktop, native Windows, macOS and separate Android editions</li>
-</ul>
+<li data-i18n="featureCustomize6">Improved MIME/Open With integration, icon themes and smarter Button Bar command selection</li></ul>
 </article>
 </div>
 <div class="cta-strip feature-strip">
@@ -178,10 +178,10 @@
 <div data-i18n="featuresPlatformsD">Windows, Linux, macOS and Android editions are active. The Pro page separately highlights planned Android power-user extras.</div>
 </div>
 <div class="platforms platform-downloads">
-<a class="platform platform-download windows" data-i18n-aria-label="releaseWindows" href="https://github.com/beyond-commander/beyondcmd/releases" rel="noopener" target="_blank"><span>Windows</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
+<a class="platform platform-download windows" data-i18n-aria-label="releaseWindows" href="https://github.com/beyond-commander/beyondcmd.win/releases" rel="noopener" target="_blank"><span>Windows</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
 <a class="platform platform-download linux" data-i18n-aria-label="releaseLinux" href="https://github.com/beyond-commander/beyondcmd/releases" rel="noopener" target="_blank"><span>Linux</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
 <a class="platform platform-download macos" data-i18n-aria-label="releaseMac" href="https://github.com/beyond-commander/beyondcmd.app/releases" rel="noopener" target="_blank"><span>macOS</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
-<a class="platform platform-download android" data-i18n-aria-label="releaseAndroid" href="https://github.com/beyond-commander/beyondcmd/releases" rel="noopener" target="_blank"><span>Android</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
+<a class="platform platform-download android" data-i18n-aria-label="releaseAndroid" href="https://github.com/beyond-commander/beyondcmd.apk/releases" rel="noopener" target="_blank"><span>Android</span><span class="platform-inline-status" data-i18n="active">Active</span></a>
 </div>
 </div>
 </div>

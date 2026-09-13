@@ -3169,7 +3169,7 @@ backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)
   filter:drop-shadow(0 22px 45px rgba(18,89,195,.22));
 }
 .contact-logo-panel img{
-  width:min(360px,82%);
+  width:min(180px,41%);
   filter:drop-shadow(0 24px 50px rgba(18,89,195,.24));
 }
 .about-layout{
@@ -3252,14 +3252,14 @@ backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)
   .about-layout{grid-template-columns:1fr}
   .about-logo-card{display:none}
   .contact-logo-panel{min-height:230px;order:-1}
-  .contact-logo-panel img{width:min(240px,60%)}
+  .contact-logo-panel img{width:min(120px,30%)}
   .about-mission-card{position:static;min-height:0}
 }
 @media(max-width:600px){
   .about-story{padding:24px 22px}
   .contact-line{grid-template-columns:1fr;gap:4px}
   .contact-logo-panel{min-height:190px}
-  .contact-logo-panel img{width:min(190px,58%)}
+  .contact-logo-panel img{width:min(95px,29%)}
 }
 
 /* ==========================================================================\n   Screenshot gallery\n   ========================================================================== */
@@ -3518,4 +3518,87 @@ body.gallery-modal-open{overflow:hidden}
   margin:22px auto 0;
   border-radius:18px;
   box-shadow:0 12px 32px rgba(23,46,86,.10);
+}
+
+
+/* Platform chips: full visible button is clickable */
+.platform-chip.platform-release-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  text-decoration:none;
+}
+.platform-chip.platform-release-link > *{
+  pointer-events:none;
+}
+
+
+/* Beyond Commander 0.7.0 feature highlights */
+.section-v070{
+  padding-top:22px;
+}
+.v070-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.v070-card p{
+  margin:0;
+  color:#566176;
+  line-height:1.62;
+}
+@media(max-width:860px){
+  .v070-grid{grid-template-columns:1fr}
+}
+
+
+
+/* Homepage hero final balance */
+@media(min-width:1101px){
+  .hero{
+    padding-top:42px !important;
+    padding-bottom:18px !important;
+  }
+
+  .hero-grid{
+    grid-template-columns:minmax(520px,.82fr) minmax(860px,1.18fr) !important;
+    gap:34px !important;
+    align-items:start !important;
+  }
+
+  .hero-left{
+    padding-right:14px !important;
+  }
+
+  .deck{
+    min-height:0 !important;
+    height:auto !important;
+    padding-left:10px !important;
+    margin:0 !important;
+    align-items:flex-start !important;
+  }
+
+  .hero-shot-wrap{
+    width:108% !important;
+    max-width:1060px !important;
+    margin-left:-2% !important;
+    margin-right:0 !important;
+    aspect-ratio:1024 / 524 !important;
+  }
+
+  .hero-shot{
+    width:100% !important;
+    height:100% !important;
+    background-size:contain !important;
+    background-position:center top !important;
+  }
+
+  .hero-shot-overlay{
+    left:19% !important;
+    right:17% !important;
+    bottom:15% !important;
+    padding:15px 18px !important;
+    font-size:clamp(18px,1.25vw,28px) !important;
+    line-height:1.12 !important;
+    border-radius:12px !important;
+  }
 }
