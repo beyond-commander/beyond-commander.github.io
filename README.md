@@ -1,9 +1,9 @@
 # Beyond Commander website
 
-Static GitHub Pages website for **Beyond Commander**:
+Static GitHub Pages website for **Beyond Commander**.
 
 - Website: https://beyond-commander.github.io/
-- Organization: https://github.com/beyond-commander
+- GitHub organization: https://github.com/beyond-commander
 
 Beyond Commander is a modern, multi-platform Commander-style file manager for Linux, Windows, macOS and Android.
 
@@ -16,68 +16,62 @@ Beyond Commander is a modern, multi-platform Commander-style file manager for Li
 | macOS | https://github.com/beyond-commander/beyondcmd.app/releases |
 | Android | https://github.com/beyond-commander/beyondcmd.apk/releases |
 
-Linux builds are published in **RPM, DEB, AppImage and Flatpak** formats.
+Linux packages include **AppImage, DEB, RPM and Flatpak**.
 
-## Included pages
+## Public pages
 
-- `index.html` — Home page, platform selector and download links
-- `features.html` — Features and Beyond Commander 0.7.0 additions
-- `gallery.html` — Screenshot gallery grouped by platform
-- `plugins.html` — WCX/WFX/WLX/WDX compatibility, WCL modules and Linux package links
-- `pro.html` — Beyond Commander Pro for Android roadmap
-- `license.html` — License and pricing information
-- `support.html` — Contact, support and platform-specific bug-report links
-- `about.html` — Project background and About page
-
-## Site infrastructure
-
-- `assets/` — Images, screenshots, icons, CSS and JavaScript
-- `assets/bc2.svg` — Official Beyond Commander icon
-- `assets/favicon.ico` — Browser favicon
-- `assets/apple-touch-icon.png` — Apple touch icon
-- `assets/beyond-commander-social.png` — Open Graph / social preview image
-- `assets/features-comparison-light.webp` — Features comparison artwork
-- `sitemap.xml` — XML sitemap
-- `robots.txt` — Crawler rules and sitemap discovery
+- `index.html` — home page and platform downloads
+- `features.html` — feature overview and Beyond Commander 0.7.0 additions
+- `gallery.html` — platform screenshot gallery
+- `plugins.html` — plugin compatibility, WCL modules and Linux packages
+- `pro.html` — Android Pro roadmap
+- `license.html` — license and pricing
+- `support.html` — contact, support and bug-report links
+- `about.html` — project background
 
 ## Localization
 
-The site currently includes:
+The site supports:
 
 - English
 - Hungarian
 - German
 
-Shared UI strings are maintained in `assets/site.js`. The HTML contains English fallback text so page content remains understandable and crawlable before JavaScript localization runs.
+English text is present directly in the HTML as a fallback. `assets/site.js` progressively replaces that text when another language is selected.
+
+JavaScript must **not** generate or replace the site navigation, footer, home hero image, or other essential page structure. If JavaScript is unavailable, the site must remain complete and usable in English.
 
 ## SEO and crawlability
 
-The site is intentionally usable by crawlers without requiring JavaScript for discovery:
+The site is static-first:
 
-- every page contains a static, crawlable navigation with normal `<a href>` links;
-- localized headings and text have English fallback content in the raw HTML;
-- every public page has a unique title, meta description and canonical URL;
-- Open Graph and Twitter metadata are present on every page;
-- the home page includes `Organization`, `WebSite` and `SoftwareApplication` JSON-LD;
+- every page contains crawlable `<a href>` navigation in raw HTML;
+- headings and localized content have real English fallback text;
+- every public page has a unique title, description and canonical URL;
+- Open Graph and Twitter metadata are included;
+- the home page contains `Organization`, `WebSite` and `SoftwareApplication` JSON-LD;
 - `robots.txt` points to the canonical sitemap URL;
-- `sitemap.xml` contains all public pages with current `lastmod` dates.
+- `sitemap.xml` lists all public pages.
 
-Submit this exact sitemap URL to search engines:
+Canonical sitemap URL:
 
 `https://beyond-commander.github.io/sitemap.xml`
 
-Do not submit a double-slash variant such as `https://beyond-commander.github.io//sitemap.xml`.
+Do not submit a double-slash URL such as `https://beyond-commander.github.io//sitemap.xml`.
 
-## Platform repositories
+## Important assets
 
-- Linux: https://github.com/beyond-commander/beyondcmd
-- Windows: https://github.com/beyond-commander/beyondcmd.win
-- macOS: https://github.com/beyond-commander/beyondcmd.app
-- Android: https://github.com/beyond-commander/beyondcmd.apk
+- `assets/bc2.svg` — official application icon
+- `assets/favicon.ico` — browser favicon
+- `assets/apple-touch-icon.png` — Apple touch icon
+- `assets/beyond-commander-social.png` — Open Graph/social preview
+- `assets/features-comparison-light.webp` — Features comparison image
+- `assets/hero-perspective-en-v2.png` — home-page hero image
+- `assets/beyondcmd.app_white.webp` — License page artwork
 
 ## Bug reports
 
-Bug reports and feature requests should be submitted through GitHub rather than by email.
+Bug reports and requests are accepted through GitHub.
 
 - Windows: https://github.com/beyond-commander/beyondcmd.win/issues
 - Linux: https://github.com/beyond-commander/beyondcmd
@@ -86,6 +80,6 @@ Bug reports and feature requests should be submitted through GitHub rather than 
 
 ## Deployment
 
-The site is plain static HTML/CSS/JavaScript and is published through GitHub Pages from this repository.
+The site is plain HTML, CSS and JavaScript and is published with GitHub Pages.
 
-After changing page structure, URLs or public assets, keep `sitemap.xml`, `robots.txt`, social metadata and this README in sync.
+After page, URL or asset changes, keep `sitemap.xml`, `robots.txt`, metadata and this README synchronized.
