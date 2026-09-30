@@ -21,12 +21,12 @@ Linux builds are published in **RPM, DEB, AppImage and Flatpak** formats.
 ## Included pages
 
 - `index.html` — Home page, platform selector and download links
-- `features.html` — Features, highlighted extras and Beyond Commander 0.7.0 additions
+- `features.html` — Features and Beyond Commander 0.7.0 additions
 - `gallery.html` — Screenshot gallery grouped by platform
 - `plugins.html` — WCX/WFX/WLX/WDX compatibility, WCL modules and Linux package links
 - `pro.html` — Beyond Commander Pro for Android roadmap
 - `license.html` — License and pricing information
-- `support.html` — Contact, product support and platform-specific bug-report links
+- `support.html` — Contact, support and platform-specific bug-report links
 - `about.html` — Project background and About page
 
 ## Site infrastructure
@@ -35,21 +35,38 @@ Linux builds are published in **RPM, DEB, AppImage and Flatpak** formats.
 - `assets/bc2.svg` — Official Beyond Commander icon
 - `assets/favicon.ico` — Browser favicon
 - `assets/apple-touch-icon.png` — Apple touch icon
-- `assets/beyond-commander-social.png` — Social/Open Graph preview image
+- `assets/beyond-commander-social.png` — Open Graph / social preview image
 - `assets/features-comparison-light.webp` — Features comparison artwork
-- `sitemap.xml` — Search-engine sitemap
+- `sitemap.xml` — XML sitemap
 - `robots.txt` — Crawler rules and sitemap discovery
-- `googlea0b89ce704ce98f5.html` — Google site verification
 
 ## Localization
 
-The website currently includes:
+The site currently includes:
 
 - English
-- German
 - Hungarian
+- German
 
-Shared UI strings are maintained in `assets/site.js`.
+Shared UI strings are maintained in `assets/site.js`. The HTML contains English fallback text so page content remains understandable and crawlable before JavaScript localization runs.
+
+## SEO and crawlability
+
+The site is intentionally usable by crawlers without requiring JavaScript for discovery:
+
+- every page contains a static, crawlable navigation with normal `<a href>` links;
+- localized headings and text have English fallback content in the raw HTML;
+- every public page has a unique title, meta description and canonical URL;
+- Open Graph and Twitter metadata are present on every page;
+- the home page includes `Organization`, `WebSite` and `SoftwareApplication` JSON-LD;
+- `robots.txt` points to the canonical sitemap URL;
+- `sitemap.xml` contains all public pages with current `lastmod` dates.
+
+Submit this exact sitemap URL to search engines:
+
+`https://beyond-commander.github.io/sitemap.xml`
+
+Do not submit a double-slash variant such as `https://beyond-commander.github.io//sitemap.xml`.
 
 ## Platform repositories
 
@@ -71,4 +88,4 @@ Bug reports and feature requests should be submitted through GitHub rather than 
 
 The site is plain static HTML/CSS/JavaScript and is published through GitHub Pages from this repository.
 
-After changing page structure, URLs or public assets, keep `sitemap.xml`, `robots.txt`, social metadata and the README in sync.
+After changing page structure, URLs or public assets, keep `sitemap.xml`, `robots.txt`, social metadata and this README in sync.
